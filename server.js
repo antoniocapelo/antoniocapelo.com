@@ -12,10 +12,13 @@ var express = require('express'),
  * Please note that the order of loading is important.
  */
 
+ console.log('AQUI!:' + process.env.NODE_ENV);
+
 // Initializing system variables
 var config = require('./config/config');
 var db     = mongoose.connect(config.db);
 
+console.log('DEPOIS!:' + process.env.NODE_ENV);
 //Bootstrap models
 var models_path = __dirname + '/app/models';
 var walk = function(path) {
@@ -35,6 +38,8 @@ walk(models_path);
 
 var app = express();
 
+console.log(process.env.NODE_ENV);
+
 //express settings
 require('./config/express')(app, db);
 
@@ -44,7 +49,7 @@ require('./config/routes')(app);
 //Start the app by listening on <port>
 var port = config.port;
 app.listen(port);
-console.log('Express app started on port ' + port);
+console.log('Express app started on port ' + port + ' on ' + process.env.NODE_ENV + ' environment.');
 
 //expose app
 exports = module.exports = app;

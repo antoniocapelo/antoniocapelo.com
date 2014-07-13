@@ -7647,17 +7647,37 @@ td.visible-print {
   font-family: 'viroregular' ,"Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-/* line 28, ../../app/styles/app.scss */
-body {
-  margin: 24px 0;
-  background: url("https://farm9.staticflickr.com/8532/8457310414_279c372072_h.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+/* line 29, ../../app/styles/app.scss */
+html {
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+/* line 36, ../../app/styles/app.scss */
+html:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background: white url("https://farm9.staticflickr.com/8532/8457310414_279c372072_h.jpg") center center fixed no-repeat;
   background-size: cover;
+  filter: blur(2px);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
-/* line 41, ../../app/styles/app.scss */
+/* line 68, ../../app/styles/app.scss */
 .hi {
   font-size: 15em;
   font-family: 'viroregular';
@@ -7667,7 +7687,7 @@ body {
   font-weight: 500;
 }
 
-/* line 50, ../../app/styles/app.scss */
+/* line 77, ../../app/styles/app.scss */
 .be-patient {
   color: white;
   opacity: 0.8;
@@ -7675,13 +7695,13 @@ body {
   font-size: 2em;
 }
 
-/* line 57, ../../app/styles/app.scss */
+/* line 84, ../../app/styles/app.scss */
 .icon-set {
   margin-top: 40px;
   text-align: center;
 }
 
-/* line 62, ../../app/styles/app.scss */
+/* line 89, ../../app/styles/app.scss */
 .icon-element {
   display: inline-block;
   width: 80px;
@@ -7689,7 +7709,7 @@ body {
   margin: 0 20px;
 }
 
-/* line 69, ../../app/styles/app.scss */
+/* line 96, ../../app/styles/app.scss */
 .icon {
   width: 80px;
   height: 80px;
@@ -7699,7 +7719,7 @@ body {
   -o-transition: all 0.25s ease-in;
   transition: all 0.25s ease-in;
 }
-/* line 74, ../../app/styles/app.scss */
+/* line 101, ../../app/styles/app.scss */
 .icon:hover {
   -webkit-transform: rotate(30deg);
   -moz-transform: rotate(30deg);
@@ -7708,22 +7728,22 @@ body {
   transform: rotate(30deg);
 }
 
-/* line 79, ../../app/styles/app.scss */
+/* line 106, ../../app/styles/app.scss */
 .twitter {
   background: url("/../images/icons/twitter.png");
 }
 
-/* line 83, ../../app/styles/app.scss */
+/* line 110, ../../app/styles/app.scss */
 .instagram {
   background: url("/../images/icons/Instagram.png");
 }
 
-/* line 87, ../../app/styles/app.scss */
+/* line 114, ../../app/styles/app.scss */
 .linkedin {
   background: url("/../images/icons/linkedin.png");
 }
 
-/* line 91, ../../app/styles/app.scss */
+/* line 118, ../../app/styles/app.scss */
 .github {
   background: url("/../images/icons/Github.png");
 }

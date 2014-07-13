@@ -25,14 +25,41 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 	font-family: 'viroregular' ,"Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-body {
-    margin: 24px 0;
-    background: url('https://farm9.staticflickr.com/8532/8457310414_279c372072_h.jpg') no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+
+html {
+	position: absolute;
+	z-index: 1;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+
+	&:before{
+		content: '';
+		display: block;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		width: 100%;
+		height: 100%;
+		z-index: -1;
+		background: #fff url('https://farm9.staticflickr.com/8532/8457310414_279c372072_h.jpg') center center fixed no-repeat;
+		background-size: cover;
+		filter: blur(2px);
+		// this does the trick
+		@include scale(1.1);
+	}
 }
+
+// body {
+//     margin: 24px 0;
+//     background: url('https://farm9.staticflickr.com/8532/8457310414_279c372072_h.jpg') no-repeat center center fixed; 
+//   -webkit-background-size: cover;
+//   -moz-background-size: cover;
+//   -o-background-size: cover;
+//   background-size: cover;
+// }
 
 .container {
 	// @include transparent(255,255,255,0.5);
