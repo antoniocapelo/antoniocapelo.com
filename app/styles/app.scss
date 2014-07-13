@@ -1,0 +1,93 @@
+/** Main styles go here **/
+$icon-font-path: "/bower_components/sass-bootstrap/fonts/";
+@import 'sass-bootstrap/lib/bootstrap';
+@import 'macros';
+
+
+@font-face {
+	font-family: Equal;
+	src: url("fonts/Equal-Regular.otf") format("opentype");
+}
+
+@font-face {
+    font-family: 'viroregular';
+    src: url('fonts/viro-webfont.eot');
+    src: url('fonts/viro-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/viro-webfont.woff') format('woff'),
+         url('fonts/viro-webfont.ttf') format('truetype'),
+         url('fonts/viro-webfont.svg#viroregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* {
+	font-family: 'viroregular' ,"Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body {
+    margin: 24px 0;
+    background: url('https://farm9.staticflickr.com/8532/8457310414_279c372072_h.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.container {
+	// @include transparent(255,255,255,0.5);
+}
+
+.hi {
+	font-size: 15em;
+	font-family: 'viroregular';
+	color: white;
+	opacity: 0.8;
+	text-align: center;
+	font-weight: 500;
+}
+
+.be-patient {
+	color: white;
+	opacity: 0.8;
+	text-align: center;
+	font-size: 2em;
+}
+
+.icon-set {
+	margin-top: 40px;
+	text-align: center;
+}
+
+.icon-element {
+	display: inline-block;
+	width: 80px;
+	height: 80px;
+	margin: 0 20px;
+}
+
+.icon {
+	width: 80px;
+	height: 80px;
+	display: block;
+	@include transition(all, 0.25s, ease-in);
+	&:hover {
+		@include rotate(30deg);
+	}
+}
+
+.twitter {
+	background: url("/../images/icons/twitter.png");
+}
+
+.instagram {
+	background: url("/../images/icons/Instagram.png");
+}
+
+.linkedin {
+	background: url("/../images/icons/linkedin.png");
+}
+
+.github {
+	background: url("/../images/icons/Github.png");
+}
