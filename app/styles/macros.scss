@@ -15,6 +15,15 @@
     transform:         rotate($deg);
 }
 
+
+@mixin translateY($d) {
+    -webkit-transform: translateY($d);
+    -moz-transform:    translateY($d);
+    -ms-transform:     translateY($d);
+    -o-transform:      translateY($d);
+    transform:         translateY($d);
+}
+
 @mixin scale($sc) {
     -webkit-transform: scale($sc);
     -moz-transform:    scale($sc);
