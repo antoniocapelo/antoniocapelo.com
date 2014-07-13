@@ -15,6 +15,14 @@
     transform:         rotate($deg);
 }
 
+@mixin scale($sc) {
+    -webkit-transform: scale($sc);
+    -moz-transform:    scale($sc);
+    -ms-transform:     scale($sc);
+    -o-transform:      scale($sc);
+    transform:         scale($sc);
+}
+
 @mixin transition($scenario, $time, $type) {
 	-webkit-transition: $scenario $time $type;
     -moz-transition: 	$scenario $time $type;
