@@ -1,18 +1,26 @@
 {
-    "name": "antoniocapelo-com",
-    "version": "0.0.0",
+    "name": "antoniocapelocom",
+    "version": "0.0.1",
     "dependencies": {
-        "jquery": "~2.0.3",
-        "angular": "~1.0.8",
-        "angular-resource": "~1.0.8",
-        "angular-cookies": "~1.0.8",
-        "angular-sanitize": "~1.0.8",
+        "jquery": "~1.9.1",
         
-        "json3": "~3.2.4",
-        "es5-shim": "~2.0.8"
+        "sass-bootstrap": "~3.0.0",
+        "angular": "latest",
+        "angular-resource": "latest",
+        "angular-cookies": "latest",
+        "angular-mocks": "latest",
+        "angular-route": "latest",
+        "angular-bootstrap": "0.10.0",
+        "angular-ui-router": "#master"
     },
-    "devDependencies": {
-        "angular-mocks": "~1.0.8",
-        "angular-scenario": "~1.0.8"
+    "exportsOverride": {
+        "bootstrap": {
+            "css": "docs/assets/css/bootstrap*.css",
+            "js": "docs/assets/js/bootstrap.js",
+            "img": "docs/assets/img/glyphicons-halflings*.png"
+        },
+        "angular-ui-utils": {
+            "modules": "modules/route/route.js"
+        }
     }
 }
