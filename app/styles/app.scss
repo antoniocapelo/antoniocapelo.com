@@ -44,8 +44,11 @@ html {
 		width: 100%;
 		height: 100%;
 		z-index: -1;
-		background: #fff url('https://farm9.staticflickr.com/8532/8457310414_279c372072_h.jpg') center center fixed no-repeat;
+		// background: #fff url('https://farm9.staticflickr.com/8532/8457310414_279c372072_h.jpg') center center fixed no-repeat;
+		background: #fff url('../images/bg.jpg') center center fixed no-repeat;
+		
 		background-size: cover;
+		-webkit-filter: blur(2px);
 		filter: blur(2px);
 		// this does the trick
 		@include scale(1.1);
@@ -63,6 +66,7 @@ html {
 
 .container {
 	// @include transparent(255,255,255,0.5);
+	margin-top: 5%;
 }
 
 .hi {
@@ -99,7 +103,7 @@ html {
 	display: block;
 	@include transition(all, 0.25s, ease-in);
 	&:hover {
-		@include rotate(30deg);
+		@include translateY(-10px);
 	}
 }
 
