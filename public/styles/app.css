@@ -7642,48 +7642,33 @@ td.visible-print {
   font-style: normal;
 }
 
-/* line 24, ../../app/styles/app.scss */
+/* line 29, ../../app/styles/app.scss */
 * {
   font-family: 'viroregular' ,"Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-/* line 29, ../../app/styles/app.scss */
+/* line 62, ../../app/styles/app.scss */
 html {
-  position: absolute;
-  z-index: 1;
+  background: url("../images/bg.jpg") no-repeat center center fixed;
+  background-size: cover;
   height: 100%;
-  width: 100%;
   overflow: hidden;
 }
-/* line 36, ../../app/styles/app.scss */
-html:before {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
+
+/* line 69, ../../app/styles/app.scss */
+body {
   height: 100%;
-  z-index: -1;
-  background: white url("../images/bg.jpg") center center fixed no-repeat;
-  background-size: cover;
-  -webkit-filter: blur(2px);
-  filter: blur(2px);
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  -o-transform: scale(1.1);
-  transform: scale(1.1);
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+  background: transparent;
 }
 
-/* line 67, ../../app/styles/app.scss */
+/* line 76, ../../app/styles/app.scss */
 .container {
   margin-top: 5%;
 }
 
-/* line 72, ../../app/styles/app.scss */
+/* line 82, ../../app/styles/app.scss */
 .hi {
   font-size: 15em;
   font-family: 'viroregular';
@@ -7693,7 +7678,20 @@ html:before {
   font-weight: 500;
 }
 
-/* line 81, ../../app/styles/app.scss */
+/* line 91, ../../app/styles/app.scss */
+.who-am-i {
+  background: rgba(255, 255, 255, 0.4);
+  text-align: center;
+  color: #3f3f3f;
+  padding: 0 10px;
+}
+
+/* line 98, ../../app/styles/app.scss */
+.subtitle {
+  font-size: 4em;
+}
+
+/* line 102, ../../app/styles/app.scss */
 .be-patient {
   color: white;
   opacity: 0.8;
@@ -7701,21 +7699,23 @@ html:before {
   font-size: 2em;
 }
 
-/* line 88, ../../app/styles/app.scss */
+/* line 109, ../../app/styles/app.scss */
 .icon-set {
+  padding-left: 0;
   margin-top: 40px;
   text-align: center;
+  margin-bottom: 40px;
 }
 
-/* line 93, ../../app/styles/app.scss */
+/* line 116, ../../app/styles/app.scss */
 .icon-element {
   display: inline-block;
   width: 80px;
   height: 80px;
-  margin: 0 20px;
+  margin: 20px 20px 0 20px;
 }
 
-/* line 100, ../../app/styles/app.scss */
+/* line 123, ../../app/styles/app.scss */
 .icon {
   width: 80px;
   height: 80px;
@@ -7725,7 +7725,7 @@ html:before {
   -o-transition: all 0.25s ease-in;
   transition: all 0.25s ease-in;
 }
-/* line 105, ../../app/styles/app.scss */
+/* line 128, ../../app/styles/app.scss */
 .icon:hover {
   -webkit-transform: translateY(-10px);
   -moz-transform: translateY(-10px);
@@ -7734,22 +7734,48 @@ html:before {
   transform: translateY(-10px);
 }
 
-/* line 110, ../../app/styles/app.scss */
+/* line 133, ../../app/styles/app.scss */
 .twitter {
   background: url("/../images/icons/twitter.png");
 }
 
-/* line 114, ../../app/styles/app.scss */
+/* line 137, ../../app/styles/app.scss */
 .instagram {
   background: url("/../images/icons/Instagram.png");
 }
 
-/* line 118, ../../app/styles/app.scss */
+/* line 141, ../../app/styles/app.scss */
 .linkedin {
   background: url("/../images/icons/linkedin.png");
 }
 
-/* line 122, ../../app/styles/app.scss */
+/* line 145, ../../app/styles/app.scss */
 .github {
   background: url("/../images/icons/Github.png");
+}
+
+@media sceen and (max-device-width: 480px) {
+  /* line 152, ../../app/styles/app.scss */
+  html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+}
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  /* line 162, ../../app/styles/app.scss */
+  .hi {
+    font-size: 7em;
+  }
+
+  /* line 165, ../../app/styles/app.scss */
+  .subtitle {
+    font-size: 2.2em;
+  }
+}
+/* line 172, ../../app/styles/app.scss */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
