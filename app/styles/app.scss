@@ -2,12 +2,17 @@
 $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 @import 'sass-bootstrap/lib/bootstrap';
 @import 'macros';
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700);
 
 $hi-font-size-desktop: 15em;
+$title-font-desktop: 9em;
 $hi-font-size-mobile: 7em;
+$p-font-desktop: 2em;
 
 $sutbtitle-font-desktop: 4em;
+$title-font-mobile: 3.3em;
 $sutbtitle-font-mobile: 2.2em;
+$p-font-mobile: 1.3em;
 
 @font-face {
 	font-family: Equal;
@@ -27,7 +32,8 @@ $sutbtitle-font-mobile: 2.2em;
 }
 
 * {
-	font-family: 'viroregular' ,"Helvetica Neue", Helvetica, Arial, sans-serif;
+	// font-family: 'Source Sans Pro', sans-serif;
+	font-family: 'Droid Sans', sans-serif;
 }
 
 
@@ -60,15 +66,16 @@ html {
 }
 
 html {
-	background: url('../images/bg.jpg') no-repeat center center fixed;
-	background-size: cover;
+	// background: url('../images/bg.jpg') no-repeat center center fixed;
+	// background-size: cover;
 	height: 100%;
-	overflow: hidden;
+	//overflow: hidden;
 }
 body
 {
 	height:100%;
-	overflow: scroll;
+	overflow-y: scroll;
+	// overflow-x: hidden;
 	-webkit-overflow-scrolling: touch;
 	background: transparent;
 }
@@ -81,22 +88,37 @@ body
 
 .hi {
 	font-size: $hi-font-size-desktop;
-	font-family: 'viroregular';
-	color: white;
-	opacity: 0.8;
+	// font-family: 'viroregular';
+	color: ghostwhite;
+	opacity: 0.9;
 	text-align: center;
 	font-weight: 500;
+	line-height: 100%;
+	&.type {
+		text-align: left;
+		margin-left: 5%;
+		margin-bottom: 5%;
+	}
 }
 
 .who-am-i {	
 	background: rgba(255,255,255,0.4);
-	text-align: center;
+	text-align: left;
 	color: rgb(63, 63, 63);
-	padding: 0 10px;
+	padding: 0 5%;
+}
+
+.title {
+	font-size: $title-font-desktop;	
+	margin-bottom: 2%;
 }
 
 .subtitle {
 	font-size: $sutbtitle-font-desktop;
+}
+
+p {
+	font-size: $p-font-desktop;
 }
 
 .be-patient {
@@ -147,6 +169,10 @@ body
 }
 
 
+.part {
+	margin: 5% 0 3% 0;
+}
+
 // Disable iOS/WinMobile font size changes
 @media sceen and (max-device-width: 480px) {
 	html {
@@ -162,11 +188,365 @@ and (max-device-width : 480px) {
 	.hi {
 		font-size: $hi-font-size-mobile;
 	}
+	.title {
+		font-size: $title-font-mobile;
+		margin-left: 2%;
+	}
 	.subtitle {
 		font-size: $sutbtitle-font-mobile;
 	}
+	p {
+		font-size: $p-font-mobile
+	}
+}
+
+/** --------------------------------------------------------------------- 
+
+	Index Page
+
+--------------------------------------------------------------------- **/
+
+
+#cover {
+	background: url('../images/bg.jpg') no-repeat center center fixed;
+	// padding: 30% 0 0 0;
+	background-size: cover;
+}
+
+
+/* Centered texts in each section
+* --------------------------------------- */
+.section{
+	text-align:center;
+	position: relative;
+}
+
+
+.profile-pic {
+	width: 90%;
+	margin-bottom: 2%;
+	float: left;
+}
+
+
+.about,.code,.beats{
+	p {
+		float: left;
+	}
+}
+
+
+/** CODE **/
+$monitor-w: 300px;
+$monitor-h: $monitor-w * 2 / 3; 
+$base-w: $monitor-w / 4;
+$base-h: $base-w;
+$screen-border: 20px;
+  
+.monitor-container {
+  position: relative;
+  width: $monitor-w;
+  height: $monitor-h;
+  .base {
+    width: $base-w;
+    height: $base-h;
+    background: black;
+    position: absolute;
+    left: 50%;
+    bottom: -$screen-border;
+    -webkit-transform: translate(-50%,50%);
+    -ms-transform: translate(-50%,50%);
+    transform: translate(-50%,50%);
+  }
+  .monitor {
+  position: relative;
+  width: $monitor-w;
+  height: $monitor-h;
+  overflow: hidden;
+  .screen {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    border: $screen-border solid black;
+    border-radius: 7%;
+    display: table;
+    overflow: hidden;  
+    position: relative;
+  }  
+  
+  .text-container {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-weight: bold;
+    font-size: $monitor-h/3;    
+    .text {
+      text-align: center;
+      display: inline-block;
+
+    }
+
+    .left, .right {
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      -webkit-transition: all 1s ease-in;
+      -moz-transition: all 1s ease-in;
+      -o-transition: all 1s ease-in;
+      transition: all 1s ease-in;
+
+    }
+    .left {
+      font-size: 1.2em;
+      left: 25%;      
+    }
+    &.off .left{
+        left: -28%;
+    }
+
+    .right {
+      font-size: 1.2em;
+      right: 25%;      
+    }    
+    &.off .right{
+        right: -28%;
+    }
+
+  }
+}
+}  
+
+
+/** MUSIC **/
+
+$mpc-width: 40%;
+$mpc-height: 120px;
+$lcd-w: 30%;
+$lcd-h: $lcd-w / 3;
+$pads-w: 50%;
+$pads-h: $pads-w;
+$turntable-w: $mpc-height;
+
+.mpc {
+  float: left;
+  background: black;
+  width: $mpc-width;  
+  height: $mpc-height;
+  border-radius: 2px;
+  position: relative;
+  margin-bottom: 5%;
+  
+}
+
+.lcd {
+    background: white;
+	width: $lcd-w;  
+  	height: $lcd-h;
+    position: absolute;
+    top: 10%;
+    left: 7%;
+  	border-radius: 2px;
+    
+  }
+
+.pads {
+	position: absolute;
+	width: $pads-w;
+	height: $pads-h;  
+	right: 7%;
+	bottom: 7%;
+}
+
+.pad-row {
+	height: 25%;
+	width: 100%;
+}
+
+.pad {
+  height: 100%;
+  width: 25%;
+  background: white;
+	float: left;
+  border: 1px solid black;
+  box-sizing: border-box;  
+}
+
+.turntable {
+  position: relative;
+  float: left;
+  width: $turntable-w;
+  height: $turntable-w;
+  background: black;
+  border-radius: 50%;
+  margin-left: 15%;
+  margin-bottom: 5%;
+  -webkit-transition: -webkit-transform 8000ms ease-in;
+  -moz-transition: -moz-transform 8000ms linear;
+  -ms-transition: -ms-transform 8000ms linear;
+  -o-transition: -o-transform 8000ms linear;
+  transition: transform 8000ms linear;
+  &.on {
+    -webkit-transform: rotate(1440deg);
+      -o-transform: rotate(1440deg);
+         transform: rotate(1440deg);
+  }
+}
+
+.line {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  border: 2px grey;
+  border-style: none solid none solid;
+  border-radius: 50%;
+}
+
+.line1 {
+  width: 100%;
+  height: 100%;
+}
+
+
+.line3{
+  width: 85%;
+  height: 85%;
 
 }
+
+.line2 {
+  width: 95%;
+  height: 95%;
+}
+
+.line4 {
+  width: 75%;
+  height: 75%;
+}
+
+.line5 {
+  width: 65%;
+  height: 65%;
+}
+
+.line6 {
+  width: 55%;
+  height: 55%;
+}
+
+.line7 {
+  width: 45%;
+  height: 45%;
+}
+
+.line8 {
+  border-style: solid;
+  background: grey;
+  border-width: 2px;
+  width:1%;
+  height: 1%;
+}
+
+/** Photos **/
+.camera {
+  margin-top: 30px;
+  width: 280px;
+  height: 150px;
+  background: black;
+  border-radius: 5px;
+  position: relative;
+  border: 1px solid black;
+}
+
+.camera .button {
+  width: 20px;
+  height: 20px;
+  background: white;
+  position: absolute;
+  left: 10px;
+  top: -14px;  
+  border: 3px solid black;
+  z-index: -1;
+    -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  transition: all 0.5 linear;
+}
+
+.camera.on .button {
+  -webkit-transform: translateY(35%);
+      -moz-transform: translateY(35%);
+      -ms-transform: translateY(35%);
+      transform: translateY(35%);
+}
+
+.camera .lens {
+  width: 100px;
+  height: 100px;
+  background: white;
+  position: absolute;
+  right: 30px;
+  bottom: 20px;  
+  border-radius: 50%;
+  border: 5px solid #1d1f20;
+}
+
+.camera .lens .eye {
+  width: 24px;
+  height: 24px;
+  background: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;  
+  -webkit-transform: translate(-50%,-50%);
+      -moz-transform: translate(-50%,-50%);
+      -ms-transform: translate(-50%,-50%);
+      transform: translateY(-50%,-50%);
+  border-radius: 50%;
+  border: 4px solid #1d1f20;
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 05s linear;
+  -o-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+
+.camera.on .eye {
+  width: 2px;
+  height: 2px;
+  background: black;
+  border: 8px solid #1d1f20;
+}
+
+.camera .top {
+  box-sizing: border-box;
+  width: 274px;
+  height: 50px;
+  background: white;
+  position: absolute;
+  left: 2px;
+  top: 2px;  
+  background: white;
+}
+
+
+
+/** ---------------------------------------------------------------------
+--------------------------------------------------------------------- **/
+
+
+.notice {
+	font-weight: bold;
+}
+
+.underline {
+	text-decoration: underline;
+}
+
+
 
 // Resets
 * {
@@ -174,3 +554,5 @@ and (max-device-width : 480px) {
 	   -moz-box-sizing: border-box;
 			box-sizing: border-box;
 }
+
+

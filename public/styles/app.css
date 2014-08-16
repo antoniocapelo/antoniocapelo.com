@@ -1,5 +1,6 @@
 /** Main styles go here **/
 /*! normalize.css v2.1.3 | MIT License | git.io/normalize */
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700);
 /* line 22, ../../app/components/sass-bootstrap/lib/_normalize.scss */
 article,
 aside,
@@ -7642,56 +7643,70 @@ td.visible-print {
   font-style: normal;
 }
 
-/* line 29, ../../app/styles/app.scss */
+/* line 34, ../../app/styles/app.scss */
 * {
-  font-family: 'viroregular' ,"Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Droid Sans', sans-serif;
 }
 
-/* line 62, ../../app/styles/app.scss */
+/* line 68, ../../app/styles/app.scss */
 html {
-  background: url("../images/bg.jpg") no-repeat center center fixed;
-  background-size: cover;
   height: 100%;
-  overflow: hidden;
 }
 
-/* line 69, ../../app/styles/app.scss */
+/* line 75, ../../app/styles/app.scss */
 body {
   height: 100%;
-  overflow: scroll;
+  overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
   background: transparent;
 }
 
-/* line 76, ../../app/styles/app.scss */
+/* line 83, ../../app/styles/app.scss */
 .container {
   margin-top: 5%;
 }
 
-/* line 82, ../../app/styles/app.scss */
+/* line 89, ../../app/styles/app.scss */
 .hi {
   font-size: 15em;
-  font-family: 'viroregular';
-  color: white;
-  opacity: 0.8;
+  color: ghostwhite;
+  opacity: 0.9;
   text-align: center;
   font-weight: 500;
+  line-height: 100%;
+}
+/* line 97, ../../app/styles/app.scss */
+.hi.type {
+  text-align: left;
+  margin-left: 5%;
+  margin-bottom: 5%;
 }
 
-/* line 91, ../../app/styles/app.scss */
+/* line 104, ../../app/styles/app.scss */
 .who-am-i {
   background: rgba(255, 255, 255, 0.4);
-  text-align: center;
+  text-align: left;
   color: #3f3f3f;
-  padding: 0 10px;
+  padding: 0 5%;
 }
 
-/* line 98, ../../app/styles/app.scss */
+/* line 111, ../../app/styles/app.scss */
+.title {
+  font-size: 9em;
+  margin-bottom: 2%;
+}
+
+/* line 116, ../../app/styles/app.scss */
 .subtitle {
   font-size: 4em;
 }
 
-/* line 102, ../../app/styles/app.scss */
+/* line 120, ../../app/styles/app.scss */
+p {
+  font-size: 2em;
+}
+
+/* line 124, ../../app/styles/app.scss */
 .be-patient {
   color: white;
   opacity: 0.8;
@@ -7699,7 +7714,7 @@ body {
   font-size: 2em;
 }
 
-/* line 109, ../../app/styles/app.scss */
+/* line 131, ../../app/styles/app.scss */
 .icon-set {
   padding-left: 0;
   margin-top: 40px;
@@ -7707,7 +7722,7 @@ body {
   margin-bottom: 40px;
 }
 
-/* line 116, ../../app/styles/app.scss */
+/* line 138, ../../app/styles/app.scss */
 .icon-element {
   display: inline-block;
   width: 80px;
@@ -7715,7 +7730,7 @@ body {
   margin: 20px 20px 0 20px;
 }
 
-/* line 123, ../../app/styles/app.scss */
+/* line 145, ../../app/styles/app.scss */
 .icon {
   width: 80px;
   height: 80px;
@@ -7725,7 +7740,7 @@ body {
   -o-transition: all 0.25s ease-in;
   transition: all 0.25s ease-in;
 }
-/* line 128, ../../app/styles/app.scss */
+/* line 150, ../../app/styles/app.scss */
 .icon:hover {
   -webkit-transform: translateY(-10px);
   -moz-transform: translateY(-10px);
@@ -7734,28 +7749,33 @@ body {
   transform: translateY(-10px);
 }
 
-/* line 133, ../../app/styles/app.scss */
+/* line 155, ../../app/styles/app.scss */
 .twitter {
   background: url("/../images/icons/twitter.png");
 }
 
-/* line 137, ../../app/styles/app.scss */
+/* line 159, ../../app/styles/app.scss */
 .instagram {
   background: url("/../images/icons/Instagram.png");
 }
 
-/* line 141, ../../app/styles/app.scss */
+/* line 163, ../../app/styles/app.scss */
 .linkedin {
   background: url("/../images/icons/linkedin.png");
 }
 
-/* line 145, ../../app/styles/app.scss */
+/* line 167, ../../app/styles/app.scss */
 .github {
   background: url("/../images/icons/Github.png");
 }
 
+/* line 172, ../../app/styles/app.scss */
+.part {
+  margin: 5% 0 3% 0;
+}
+
 @media sceen and (max-device-width: 480px) {
-  /* line 152, ../../app/styles/app.scss */
+  /* line 178, ../../app/styles/app.scss */
   html {
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
@@ -7763,17 +7783,375 @@ body {
 }
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  /* line 162, ../../app/styles/app.scss */
+  /* line 188, ../../app/styles/app.scss */
   .hi {
     font-size: 7em;
   }
 
-  /* line 165, ../../app/styles/app.scss */
+  /* line 191, ../../app/styles/app.scss */
+  .title {
+    font-size: 3.3em;
+    margin-left: 2%;
+  }
+
+  /* line 195, ../../app/styles/app.scss */
   .subtitle {
     font-size: 2.2em;
   }
+
+  /* line 198, ../../app/styles/app.scss */
+  p {
+    font-size: 1.3em;
+  }
 }
-/* line 172, ../../app/styles/app.scss */
+/** --------------------------------------------------------------------- 
+
+	Index Page
+
+--------------------------------------------------------------------- **/
+/* line 210, ../../app/styles/app.scss */
+#cover {
+  background: url("../images/bg.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+/* Centered texts in each section
+* --------------------------------------- */
+/* line 219, ../../app/styles/app.scss */
+.section {
+  text-align: center;
+  position: relative;
+}
+
+/* line 225, ../../app/styles/app.scss */
+.profile-pic {
+  width: 90%;
+  margin-bottom: 2%;
+  float: left;
+}
+
+/* line 233, ../../app/styles/app.scss */
+.about p, .code p, .beats p {
+  float: left;
+}
+
+/** CODE **/
+/* line 246, ../../app/styles/app.scss */
+.monitor-container {
+  position: relative;
+  width: 300px;
+  height: 200px;
+}
+/* line 250, ../../app/styles/app.scss */
+.monitor-container .base {
+  width: 75px;
+  height: 75px;
+  background: black;
+  position: absolute;
+  left: 50%;
+  bottom: -20px;
+  -webkit-transform: translate(-50%, 50%);
+  -ms-transform: translate(-50%, 50%);
+  transform: translate(-50%, 50%);
+}
+/* line 261, ../../app/styles/app.scss */
+.monitor-container .monitor {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+}
+/* line 266, ../../app/styles/app.scss */
+.monitor-container .monitor .screen {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  border: 20px solid black;
+  border-radius: 7%;
+  display: table;
+  overflow: hidden;
+  position: relative;
+}
+/* line 277, ../../app/styles/app.scss */
+.monitor-container .monitor .text-container {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  font-weight: bold;
+  font-size: 66.66667px;
+}
+/* line 283, ../../app/styles/app.scss */
+.monitor-container .monitor .text-container .text {
+  text-align: center;
+  display: inline-block;
+}
+/* line 289, ../../app/styles/app.scss */
+.monitor-container .monitor .text-container .left, .monitor-container .monitor .text-container .right {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -webkit-transition: all 1s ease-in;
+  -moz-transition: all 1s ease-in;
+  -o-transition: all 1s ease-in;
+  transition: all 1s ease-in;
+}
+/* line 301, ../../app/styles/app.scss */
+.monitor-container .monitor .text-container .left {
+  font-size: 1.2em;
+  left: 25%;
+}
+/* line 305, ../../app/styles/app.scss */
+.monitor-container .monitor .text-container.off .left {
+  left: -28%;
+}
+/* line 309, ../../app/styles/app.scss */
+.monitor-container .monitor .text-container .right {
+  font-size: 1.2em;
+  right: 25%;
+}
+/* line 313, ../../app/styles/app.scss */
+.monitor-container .monitor .text-container.off .right {
+  right: -28%;
+}
+
+/** MUSIC **/
+/* line 332, ../../app/styles/app.scss */
+.mpc {
+  float: left;
+  background: black;
+  width: 40%;
+  height: 120px;
+  border-radius: 2px;
+  position: relative;
+  margin-bottom: 5%;
+}
+
+/* line 343, ../../app/styles/app.scss */
+.lcd {
+  background: white;
+  width: 30%;
+  height: 10%;
+  position: absolute;
+  top: 10%;
+  left: 7%;
+  border-radius: 2px;
+}
+
+/* line 354, ../../app/styles/app.scss */
+.pads {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  right: 7%;
+  bottom: 7%;
+}
+
+/* line 362, ../../app/styles/app.scss */
+.pad-row {
+  height: 25%;
+  width: 100%;
+}
+
+/* line 367, ../../app/styles/app.scss */
+.pad {
+  height: 100%;
+  width: 25%;
+  background: white;
+  float: left;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+/* line 376, ../../app/styles/app.scss */
+.turntable {
+  position: relative;
+  float: left;
+  width: 120px;
+  height: 120px;
+  background: black;
+  border-radius: 50%;
+  margin-left: 15%;
+  margin-bottom: 5%;
+  -webkit-transition: -webkit-transform 8000ms ease-in;
+  -moz-transition: -moz-transform 8000ms linear;
+  -ms-transition: -ms-transform 8000ms linear;
+  -o-transition: -o-transform 8000ms linear;
+  transition: transform 8000ms linear;
+}
+/* line 390, ../../app/styles/app.scss */
+.turntable.on {
+  -webkit-transform: rotate(1440deg);
+  -o-transform: rotate(1440deg);
+  transform: rotate(1440deg);
+}
+
+/* line 397, ../../app/styles/app.scss */
+.line {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border: 2px grey;
+  border-style: none solid none solid;
+  border-radius: 50%;
+}
+
+/* line 409, ../../app/styles/app.scss */
+.line1 {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 415, ../../app/styles/app.scss */
+.line3 {
+  width: 85%;
+  height: 85%;
+}
+
+/* line 421, ../../app/styles/app.scss */
+.line2 {
+  width: 95%;
+  height: 95%;
+}
+
+/* line 426, ../../app/styles/app.scss */
+.line4 {
+  width: 75%;
+  height: 75%;
+}
+
+/* line 431, ../../app/styles/app.scss */
+.line5 {
+  width: 65%;
+  height: 65%;
+}
+
+/* line 436, ../../app/styles/app.scss */
+.line6 {
+  width: 55%;
+  height: 55%;
+}
+
+/* line 441, ../../app/styles/app.scss */
+.line7 {
+  width: 45%;
+  height: 45%;
+}
+
+/* line 446, ../../app/styles/app.scss */
+.line8 {
+  border-style: solid;
+  background: grey;
+  border-width: 2px;
+  width: 1%;
+  height: 1%;
+}
+
+/** Photos **/
+/* line 455, ../../app/styles/app.scss */
+.camera {
+  margin-top: 30px;
+  width: 280px;
+  height: 150px;
+  background: black;
+  border-radius: 5px;
+  position: relative;
+  border: 1px solid black;
+}
+
+/* line 465, ../../app/styles/app.scss */
+.camera .button {
+  width: 20px;
+  height: 20px;
+  background: white;
+  position: absolute;
+  left: 10px;
+  top: -14px;
+  border: 3px solid black;
+  z-index: -1;
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 0.5s linear;
+  -o-transition: all 0.5s linear;
+  transition: all 0.5 linear;
+}
+
+/* line 480, ../../app/styles/app.scss */
+.camera.on .button {
+  -webkit-transform: translateY(35%);
+  -moz-transform: translateY(35%);
+  -ms-transform: translateY(35%);
+  transform: translateY(35%);
+}
+
+/* line 487, ../../app/styles/app.scss */
+.camera .lens {
+  width: 100px;
+  height: 100px;
+  background: white;
+  position: absolute;
+  right: 30px;
+  bottom: 20px;
+  border-radius: 50%;
+  border: 5px solid #1d1f20;
+}
+
+/* line 498, ../../app/styles/app.scss */
+.camera .lens .eye {
+  width: 24px;
+  height: 24px;
+  background: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translateY(-50%, -50%);
+  border-radius: 50%;
+  border: 4px solid #1d1f20;
+  -webkit-transition: all 0.5s linear;
+  -moz-transition: all 05s linear;
+  -o-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+
+/* line 517, ../../app/styles/app.scss */
+.camera.on .eye {
+  width: 2px;
+  height: 2px;
+  background: black;
+  border: 8px solid #1d1f20;
+}
+
+/* line 524, ../../app/styles/app.scss */
+.camera .top {
+  box-sizing: border-box;
+  width: 274px;
+  height: 50px;
+  background: white;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  background: white;
+}
+
+/** ---------------------------------------------------------------------
+--------------------------------------------------------------------- **/
+/* line 541, ../../app/styles/app.scss */
+.notice {
+  font-weight: bold;
+}
+
+/* line 545, ../../app/styles/app.scss */
+.underline {
+  text-decoration: underline;
+}
+
+/* line 552, ../../app/styles/app.scss */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
