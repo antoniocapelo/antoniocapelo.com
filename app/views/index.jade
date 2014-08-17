@@ -1,25 +1,34 @@
 extends layouts/default
 
 block content
-    #fullpage
-        .section#cover
-            .hi.type Hi There!
-            p.who-am-i.subtitle I'm <b>António Capelo</b>, a Front-End Engineer from Portugal.
+    section(id="cover")
+        .hi.type Hi There!
+        p.who-am-i.subtitle I'm <b>António Capelo</b>, a Front-End Engineer from Portugal
+        ul.icon-set
+            li.icon-element
+                a(class="icon twitter",href="https://twitter.com/antoniocapelo", target="_blank")
+            li.icon-element
+                a(class="icon instagram",href="http://www.instagram.com/acapelo", target="_blank")
+            li.icon-element
+                a(class="icon linkedin",href="https://www.linkedin.com/in/antoniocapelo", target="_blank")
+            li.icon-element
+                a(class="icon github",href="https://github.com/antoniocapelo", target="_blank")
 
-    section(class="row wrap")
-        .col-md-10.col-md-offset-1.main
-            .row.part.about
-                h2.title #whoami
-                .visible-lg.col-lg-4
-                    img(src="/images/profile_pic.jpg", class="profile-pic")
-                .desc.col-md-12.col-lg-6
+    section(class="row wrap main")
+        .part.about
+            h2.title #whoami
+            .pure-g
+                .pure-u-1.pure-u-xl-1-3.hide-mobile.symbol
+                    img(src="/images/profile_pic.jpg", class="profile-pic pure-img")
+                .pure-u-1.pure-u-xl-2-3.desc
                     p Former Civil Engineer, now Software Engineer, and an all-around good guy.
                     p I do most of my work on the 'frontend' side, exploring the Javascript Lands and doin' it for the client :)
                     p <span style="font-style:italic">Coffee / beatmaking / bicycles / web lover.</span> 
                     p Feel free to contact me for a co-op, leave some feedback or even ask for a print of a photograph.
-            .row.part.code
+        .pure-g
+            .pure-u-xl-1-3.part.code
                 h2.title #code
-                .visible-lg.col-lg-4
+                .pure-u-1.hide-mobile.symbol
                     .monitor-container
                         .monitor
                             .screen
@@ -31,65 +40,68 @@ block content
                                     .right
                                         &gt;
                         .base
-                .desc.col-md-12.col-lg-8
+                .pure-u-1.desc
                     p I really love what I do, and I feel lucky to do it for a living.
                     p I'm a <span class="notice">passionate developer</span> focused on browser <span class="underline">performance</span>, <span class="underline">clean solutions</span> and <span class="underline">quality code</span>.
                     p Besides that, I also have a taste for <span class="underline">UX/UI</span> and try to deliver the best experience for the users.
-            .row.part.beats
+            .part.beats.pure-u-xl-1-3
                 h2.title #music
-                .visible-lg.col-lg-4
-                    .mpc
-                        .lcd
-                        .pads
-                            .pad-row.row-1
-                                .pad
-                                .pad
-                                .pad
-                                .pad
-                            .pad-row.row-2
-                                .pad
-                                .pad
-                                .pad
-                                .pad
-                            .pad-row.row-3
-                                .pad
-                                .pad
-                                .pad
-                                .pad
-                            .pad-row.row-4
-                                .pad
-                                .pad
-                                .pad
-                                .pad
-                    div(class="turntable awty" data-awty="on" data-awty-toggle="true")
-                        .line.line1
-                        .line.line2
-                        .line.line3
-                        .line.line4
-                        .line.line5
-                        .line.line6
-                        .line.line7
-                        .line.line8
-                .desc.col-md-12.col-lg-8
+                .pure-u-1.hide-mobile.symbol
+                    .music-symbol-container
+                        .mpc
+                            .lcd
+                            .pads
+                                .pad-row.row-1
+                                    .pad
+                                    .pad
+                                    .pad
+                                    .pad
+                                .pad-row.row-2
+                                    .pad
+                                    .pad
+                                    .pad
+                                    .pad
+                                .pad-row.row-3
+                                    .pad
+                                    .pad
+                                    .pad
+                                    .pad
+                                .pad-row.row-4
+                                    .pad
+                                    .pad
+                                    .pad
+                                    .pad
+                        div(class="turntable awty" data-awty="on" data-awty-toggle="true")
+                            .line.line1
+                            .line.line2
+                            .line.line3
+                            .line.line4
+                            .line.line5
+                            .line.line6
+                            .line.line7
+                            .line.line8
+                .pure-u-1.desc
                     p On my spare time I make some music and I share it under the name of <span class="notice">Stereotipo</span>.
                     p I take old records, sample and mix them with drum breaks, resulting in some jazzy hip hop <a href="http://stereotipo.bandcamp.com/" target="_blank">instrumentals</a>.
-                .row.part.photos
+            .part.photos.pure-u-xl-1-3
                 h2.title #photos
-                .col-lg-4
+                .pure-u-1.hide-mobile.symbol
                     div(class="camera awty" data-awty="on" data-awty-toggle="true")
                         .top
+                            .finder
+                            .logo
                         .button
                         .lens
                             .eye
-                .desc.col-md-12.col-lg-8
-                    p I also like photography, mainly street and documentary and I make my attempts <a href="https://www.flickr.com/photos/acapelo" target="_blank">here</a>.
+                .pure-u-1.desc
+                    p I also like photography, mainly street and documentary and I make my attempts <a href="https://www.flickr.com/photos/acapelo" target="_blank">here</a>. 
 
-            //- ul.icon-set
-            //-     li.icon-element
-            //-         a(class="icon twitter",href="https://twitter.com/antoniocapelo", target="_blank")
-            //-     li.icon-element
-            //-         a(class="icon instagram",href="http://www.instagram.com/acapelo", target="_blank")
-            //-     li.icon-element
-            //-         a(class="icon linkedin",href="https://www.linkedin.com/in/antoniocapelo", target="_blank")
-            //-     li.icon-element
-            //-         a(class="icon github",href="https://github.com/antoniocapelo", target="_blank")
+        //- ul.icon-set
+        //-     li.icon-element
+        //-         a(class="icon twitter",href="https://twitter.com/antoniocapelo", target="_blank")
+        //-     li.icon-element
+        //-         a(class="icon instagram",href="http://www.instagram.com/acapelo", target="_blank")
+        //-     li.icon-element
+        //-         a(class="icon linkedin",href="https://www.linkedin.com/in/antoniocapelo", target="_blank")
+        //-     li.icon-element
+        //-         a(class="icon github",href="https://github.com/antoniocapelo", target="_blank")

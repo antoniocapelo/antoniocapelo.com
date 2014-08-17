@@ -1,18 +1,17 @@
 /** Main styles go here **/
-$icon-font-path: "/bower_components/sass-bootstrap/fonts/";
-@import 'sass-bootstrap/lib/bootstrap';
 @import 'macros';
+@charset 'UTF-8';
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700);
 
-$hi-font-size-desktop: 15em;
-$title-font-desktop: 9em;
-$hi-font-size-mobile: 7em;
-$p-font-desktop: 2em;
+$hi-font-size-desktop: 15rem;
+$title-font-desktop: 8rem;
+$hi-font-size-mobile: 7rem;
+$p-font-desktop: 2rem;
 
-$sutbtitle-font-desktop: 4em;
-$title-font-mobile: 3.3em;
-$sutbtitle-font-mobile: 2.2em;
-$p-font-mobile: 1.3em;
+$sutbtitle-font-desktop: 4rem;
+$title-font-mobile: 3.3rem;
+$sutbtitle-font-mobile: 2.2rem;
+$p-font-mobile: 1.3rem;
 
 @font-face {
 	font-family: Equal;
@@ -34,46 +33,21 @@ $p-font-mobile: 1.3em;
 * {
 	// font-family: 'Source Sans Pro', sans-serif;
 	font-family: 'Droid Sans', sans-serif;
+	box-sizing: border-box;
 }
 
 
-html {
-	// position: absolute;
-	// z-index: 1;
-	// width: 100%;
-
-	// &:before{
-	// 	content: '';
-	// 	display: block;
-	// 	position: absolute;
-	// 	top: 0;
-	// 	bottom: 0;
-	// 	left: 0;
-	// 	right: 0;
-	// 	width: 100%;
-	// 	height: 100%;
-	// 	z-index: -1;
-	// 	// background: #fff url('https://farm9.staticflickr.com/8532/8457310414_279c372072_h.jpg') center center fixed no-repeat;
-	// 	background: #fff url('../images/bg.jpg') center center fixed no-repeat;
-		
-	// 	background-size: cover;
-	// 	-webkit-filter: blur(2px);
-	// 	filter: blur(2px);
-	// 	// this does the trick
-	// 	@include scale(1.1);
-	// }
-
+html, body {
+	margin: 0;
+  height: 100%;
 }
 
 html {
-	// background: url('../images/bg.jpg') no-repeat center center fixed;
-	// background-size: cover;
-	height: 100%;
-	//overflow: hidden;
+  font-size: 16px
 }
+
 body
 {
-	height:100%;
 	overflow-y: scroll;
 	// overflow-x: hidden;
 	-webkit-overflow-scrolling: touch;
@@ -96,8 +70,7 @@ body
 	line-height: 100%;
 	&.type {
 		text-align: left;
-		margin-left: 5%;
-		margin-bottom: 5%;
+		margin: 5%;
 	}
 }
 
@@ -111,9 +84,11 @@ body
 .title {
 	font-size: $title-font-desktop;	
 	margin-bottom: 2%;
+  margin-top: 0px;
 }
 
 .subtitle {
+  padding: 30px;
 	font-size: $sutbtitle-font-desktop;
 }
 
@@ -125,27 +100,28 @@ p {
 	color: white;
 	opacity: 0.8;
 	text-align: center;
-	font-size: 2em;
+	font-size: 2rem;
 }
 
 .icon-set {
 	padding-left: 0;
-	margin-top: 40px;
+	margin-top: 30px;
 	text-align: center;
-	margin-bottom: 40px;
+	margin-bottom: 50px;
 }
 
 .icon-element {
 	display: inline-block;
-	width: 80px;
-	height: 80px;
+	width: 100px;
+	height: 100px;
 	margin: 20px 20px 0 20px;	
 }
 
 .icon {
-	width: 80px;
-	height: 80px;
+	width: 100px;
+	height: 100px;
 	display: block;
+  background-size: 100px 100px;
 	@include transition(all, 0.25s, ease-in);
 	&:hover {
 		@include translateY(-10px);
@@ -153,28 +129,32 @@ p {
 }
 
 .twitter {
-	background: url("/../images/icons/twitter.png");
+	background-image: url("/../images/icons/twitter.png");
 }
 
 .instagram {
-	background: url("/../images/icons/Instagram.png");
+	background-image: url("/../images/icons/Instagram.png");
 }
 
 .linkedin {
-	background: url("/../images/icons/linkedin.png");
+	background-image: url("/../images/icons/linkedin.png");
 }
 
 .github {
-	background: url("/../images/icons/Github.png");
+	background-image: url("/../images/icons/Github.png");
 }
 
 
 .part {
-	margin: 5% 0 3% 0;
+	margin: 10px 0 3% 0;
+	padding-left: 16px;
+	padding-right: 16px;
+
 }
 
+
 // Disable iOS/WinMobile font size changes
-@media sceen and (max-device-width: 480px) {
+@media only screen and (max-device-width: 480px) {
 	html {
 		-webkit-text-size-adjust: 100%;
 			-ms-text-size-adjust: 100%;
@@ -182,22 +162,29 @@ p {
 }
 
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 480px) {
+@media screen and (min-width : 320px) and (max-width : 640px) {
+ .hide-mobile {
+    display: none;
+  }
+}
+@media screen and (min-width : 320px) and (max-width : 720px) {
+
 	.hi {
 		font-size: $hi-font-size-mobile;
 	}
 	.title {
 		font-size: $title-font-mobile;
 		margin-left: 2%;
+		margin-top: 0;
 	}
 	.subtitle {
 		font-size: $sutbtitle-font-mobile;
 	}
 	p {
-		font-size: $p-font-mobile
+		font-size: $p-font-mobile;
 	}
+  
+ 
 }
 
 /** --------------------------------------------------------------------- 
@@ -211,6 +198,10 @@ and (max-device-width : 480px) {
 	background: url('../images/bg.jpg') no-repeat center center fixed;
 	// padding: 30% 0 0 0;
 	background-size: cover;
+  position: relative;
+  display: table;
+  height: 100%;
+  width: 100%;
 }
 
 
@@ -224,27 +215,44 @@ and (max-device-width : 480px) {
 
 .profile-pic {
 	width: 90%;
+  max-width: 500px;
 	margin-bottom: 2%;
-	float: left;
+  display: inline-block;
 }
 
 
-.about,.code,.beats{
+.about{
 	p {
 		float: left;
+    margin-top: 0;
 	}
 }
 
+.code,.beats,.photos{
+  p {
+    float: left;
+    margin-top: 0;
+    font-size: 1.5rem;
+    font-weight: normal;
+  }
+}
+
+.symbol {
+  text-align: center;
+  min-height: 255px;
+}
 
 /** CODE **/
 $monitor-w: 300px;
 $monitor-h: $monitor-w * 2 / 3; 
 $base-w: $monitor-w / 4;
-$base-h: $base-w;
+$base-h: 40px;
 $screen-border: 20px;
   
 .monitor-container {
   position: relative;
+  display: inline-block;
+  margin-bottom: $base-h;
   width: $monitor-w;
   height: $monitor-h;
   .base {
@@ -299,7 +307,7 @@ $screen-border: 20px;
 
     }
     .left {
-      font-size: 1.2em;
+      font-size: 5rem;
       left: 25%;      
     }
     &.off .left{
@@ -307,7 +315,7 @@ $screen-border: 20px;
     }
 
     .right {
-      font-size: 1.2em;
+      font-size: 5rem;
       right: 25%;      
     }    
     &.off .right{
@@ -321,8 +329,8 @@ $screen-border: 20px;
 
 /** MUSIC **/
 
-$mpc-width: 40%;
-$mpc-height: 120px;
+$mpc-width: 220px;
+$mpc-height: 140px;
 $lcd-w: 30%;
 $lcd-h: $lcd-w / 3;
 $pads-w: 50%;
@@ -330,7 +338,7 @@ $pads-h: $pads-w;
 $turntable-w: $mpc-height;
 
 .mpc {
-  float: left;
+  display: inline-block;
   background: black;
   width: $mpc-width;  
   height: $mpc-height;
@@ -375,12 +383,12 @@ $turntable-w: $mpc-height;
 
 .turntable {
   position: relative;
-  float: left;
+  display: inline-block;
   width: $turntable-w;
   height: $turntable-w;
   background: black;
   border-radius: 50%;
-  margin-left: 15%;
+  margin-left: 20px;
   margin-bottom: 5%;
   -webkit-transition: -webkit-transform 8000ms ease-in;
   -moz-transition: -moz-transform 8000ms linear;
@@ -451,9 +459,20 @@ $turntable-w: $mpc-height;
   height: 1%;
 }
 
+.music-symbol-container {
+  text-align: center;
+  overflow: hidden;
+  min-width: 400px;
+  display: inline-block;
+  margin-top: 40px;
+}
+
+
+
 /** Photos **/
 .camera {
-  margin-top: 30px;
+  margin-top: 20px;
+  display: inline-block;  
   width: 280px;
   height: 150px;
   background: black;
@@ -471,10 +490,10 @@ $turntable-w: $mpc-height;
   top: -14px;  
   border: 3px solid black;
   z-index: -1;
-    -webkit-transition: all 0.5s linear;
-  -moz-transition: all 0.5s linear;
-  -o-transition: all 0.5s linear;
-  transition: all 0.5 linear;
+    -webkit-transition: all 0.5s linear 0.5s;
+  -moz-transition: all 0.5s linear 0.5s;
+  -o-transition: all 0.5s linear 0.5s;
+  transition: all 0.5 linear 0.5s;
 }
 
 .camera.on .button {
@@ -508,10 +527,10 @@ $turntable-w: $mpc-height;
       transform: translateY(-50%,-50%);
   border-radius: 50%;
   border: 4px solid #1d1f20;
-  -webkit-transition: all 0.5s linear;
-  -moz-transition: all 05s linear;
-  -o-transition: all 0.5s linear;
-  transition: all 0.5s linear;
+  -webkit-transition: all 0.5s linear 0.5s;
+  -moz-transition: all 05s linear 0.5s;
+  -o-transition: all 0.5s linear 0.5s;
+  transition: all 0.5s linear 0.5s;
 }
 
 .camera.on .eye {
@@ -530,6 +549,26 @@ $turntable-w: $mpc-height;
   left: 2px;
   top: 2px;  
   background: white;
+}
+
+.camera .top .finder {
+  width: 27px;
+  height: 22px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border-radius: 5px;
+  border: 2px solid black;
+}
+
+.camera .top .logo {  
+  width: 20px;
+  height: 19px;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  background: red;
+  border-radius: 50%;
 }
 
 
@@ -555,4 +594,6 @@ $turntable-w: $mpc-height;
 			box-sizing: border-box;
 }
 
-
+.pure-u-0 {
+  width: 0%;
+}
