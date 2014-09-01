@@ -2,17 +2,18 @@ extends layouts/default
 
 block content
     section(id="cover")
-        .hi.type Hi There!
-        p.who-am-i.subtitle I'm <b>António Capelo</b>, a Front-End Engineer from Portugal
-        ul.icon-set
-            li.icon-element
-                a(class="icon twitter",href="https://twitter.com/antoniocapelo", target="_blank")
-            li.icon-element
-                a(class="icon instagram",href="http://www.instagram.com/acapelo", target="_blank")
-            li.icon-element
-                a(class="icon linkedin",href="https://www.linkedin.com/in/antoniocapelo", target="_blank")
-            li.icon-element
-                a(class="icon github",href="https://github.com/antoniocapelo", target="_blank")
+            div(class="filter awty light", data-awty="light" data-awty-remove="true" data-awty-toggle="true" data-awty-mode="peek" data-awty-space="0.9")
+                .hi.type Hi There
+                p.who-am-i.subtitle I'm <b>António Capelo</b>, a Front-End Engineer from Portugal
+                ul.icon-set
+                    li.icon-element
+                        a(class="icon twitter",href="https://twitter.com/antoniocapelo", target="_blank")<i class="fa fa-twitter"></i>
+                    li.icon-element
+                        a(class="icon instagram",href="http://www.instagram.com/acapelo", target="_blank")<i class="fa fa-instagram"></i>
+                    li.icon-element
+                        a(class="icon linkedin",href="https://www.linkedin.com/in/antoniocapelo", target="_blank")<i class="fa fa-linkedin-square"></i>
+                    li.icon-element
+                        a(class="icon github",href="https://github.com/antoniocapelo", target="_blank")<i class="fa fa-github"></i>
 
     section(class="row wrap main")
         .part.about
@@ -82,7 +83,7 @@ block content
                             .line.line8
                 .pure-u-1.desc
                     p On my spare time I make some music and I share it under the name of <span class="notice">Stereotipo</span>.
-                    p I take old records, sample and mix them with drum breaks, resulting in some jazzy hip hop <a href="http://stereotipo.bandcamp.com/" target="_blank">instrumentals</a>.
+                    p I take old records, sample and mix them with drum breaks, resulting in some jazzy hip hop <a class="nav" href="http://stereotipo.bandcamp.com/" target="_blank">instrumentals</a>.
             .part.photos.pure-u-xl-1-3
                 h2.title #photos
                 .pure-u-1.hide-mobile.symbol
@@ -94,8 +95,10 @@ block content
                         .lens
                             .eye
                 .pure-u-1.desc
-                    p I also like photography, mainly street and documentary and I make my attempts <a href="https://www.flickr.com/photos/acapelo" target="_blank">here</a>. 
-
+                    p I also like photography, mainly street and documentary. 
+                    p Some say I collect a bunch of cameras but if fact I use them, and showcase some of the attempts <a class="nav"  href="https://www.flickr.com/photos/acapelo" target="_blank">here</a>. 
+            div(class="footer pure-u-1 awty faded", data-awty="faded" data-awty-remove="true" data-awty-toggle="true" data-awty-mode="peek" data-awty-space="0.7")
+                    p <a href="http://www.antoniocapelo.com" target="_blank">antoniocapelo.com</a>
         //- ul.icon-set
         //-     li.icon-element
         //-         a(class="icon twitter",href="https://twitter.com/antoniocapelo", target="_blank")

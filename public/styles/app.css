@@ -13,36 +13,37 @@
   font-style: normal;
 }
 
-/* line 33, ../../app/styles/app.scss */
+/* line 36, ../../app/styles/app.scss */
 * {
   font-family: 'Droid Sans', sans-serif;
   box-sizing: border-box;
+  color: #292f33;
 }
 
-/* line 40, ../../app/styles/app.scss */
+/* line 44, ../../app/styles/app.scss */
 html, body {
   margin: 0;
   height: 100%;
 }
 
-/* line 45, ../../app/styles/app.scss */
+/* line 49, ../../app/styles/app.scss */
 html {
   font-size: 16px;
 }
 
-/* line 50, ../../app/styles/app.scss */
+/* line 54, ../../app/styles/app.scss */
 body {
   overflow-y: scroll;
   -webkit-overflow-scrolling: touch;
-  background: transparent;
+  background: ghostwhite;
 }
 
-/* line 57, ../../app/styles/app.scss */
+/* line 61, ../../app/styles/app.scss */
 .container {
   margin-top: 5%;
 }
 
-/* line 63, ../../app/styles/app.scss */
+/* line 67, ../../app/styles/app.scss */
 .hi {
   font-size: 15rem;
   color: ghostwhite;
@@ -51,13 +52,13 @@ body {
   font-weight: 500;
   line-height: 100%;
 }
-/* line 71, ../../app/styles/app.scss */
+/* line 75, ../../app/styles/app.scss */
 .hi.type {
   text-align: left;
   margin: 5%;
 }
 
-/* line 77, ../../app/styles/app.scss */
+/* line 81, ../../app/styles/app.scss */
 .who-am-i {
   background: rgba(255, 255, 255, 0.4);
   text-align: left;
@@ -65,25 +66,25 @@ body {
   padding: 0 5%;
 }
 
-/* line 84, ../../app/styles/app.scss */
+/* line 88, ../../app/styles/app.scss */
 .title {
-  font-size: 8rem;
+  font-size: 6rem;
   margin-bottom: 2%;
   margin-top: 0px;
 }
 
-/* line 90, ../../app/styles/app.scss */
+/* line 94, ../../app/styles/app.scss */
 .subtitle {
   padding: 30px;
   font-size: 4rem;
 }
 
-/* line 95, ../../app/styles/app.scss */
+/* line 99, ../../app/styles/app.scss */
 p {
   font-size: 2rem;
 }
 
-/* line 99, ../../app/styles/app.scss */
+/* line 103, ../../app/styles/app.scss */
 .be-patient {
   color: white;
   opacity: 0.8;
@@ -91,7 +92,7 @@ p {
   font-size: 2rem;
 }
 
-/* line 106, ../../app/styles/app.scss */
+/* line 110, ../../app/styles/app.scss */
 .icon-set {
   padding-left: 0;
   margin-top: 30px;
@@ -99,63 +100,99 @@ p {
   margin-bottom: 50px;
 }
 
-/* line 113, ../../app/styles/app.scss */
+/* line 117, ../../app/styles/app.scss */
 .icon-element {
   display: inline-block;
-  width: 100px;
-  height: 100px;
-  margin: 20px 20px 0 20px;
+  margin: 10px 3rem;
+}
+/* line 120, ../../app/styles/app.scss */
+.icon-element i {
+  color: ghostwhite;
 }
 
-/* line 120, ../../app/styles/app.scss */
+/* line 125, ../../app/styles/app.scss */
 .icon {
-  width: 100px;
-  height: 100px;
   display: block;
-  background-size: 100px 100px;
+  font-size: 5rem;
+  padding: 15px 30px;
+  border-radius: 50%;
   -webkit-transition: all 0.25s ease-in;
   -moz-transition: all 0.25s ease-in;
   -o-transition: all 0.25s ease-in;
   transition: all 0.25s ease-in;
 }
-/* line 126, ../../app/styles/app.scss */
-.icon:hover {
-  -webkit-transform: translateY(-10px);
-  -moz-transform: translateY(-10px);
-  -ms-transform: translateY(-10px);
-  -o-transform: translateY(-10px);
-  transform: translateY(-10px);
-}
-
 /* line 131, ../../app/styles/app.scss */
-.twitter {
-  background-image: url("/../images/icons/twitter.png");
+.icon:hover {
+  background: #64AA64;
 }
 
-/* line 135, ../../app/styles/app.scss */
-.instagram {
-  background-image: url("/../images/icons/Instagram.png");
-}
-
-/* line 139, ../../app/styles/app.scss */
-.linkedin {
-  background-image: url("/../images/icons/linkedin.png");
-}
-
-/* line 143, ../../app/styles/app.scss */
-.github {
-  background-image: url("/../images/icons/Github.png");
-}
-
-/* line 148, ../../app/styles/app.scss */
+/* line 153, ../../app/styles/app.scss */
 .part {
   margin: 10px 0 3% 0;
   padding-left: 16px;
   padding-right: 16px;
 }
 
+/* line 160, ../../app/styles/app.scss */
+.nav {
+  padding: 0 0.2rem;
+  text-decoration: none;
+  color: #64AA64;
+  font-weight: bold;
+  -webkit-transition: all 0.25s ease-in;
+  -moz-transition: all 0.25s ease-in;
+  -o-transition: all 0.25s ease-in;
+  transition: all 0.25s ease-in;
+}
+
+/* line 168, ../../app/styles/app.scss */
+.nav:hover {
+  background: #292f33;
+  color: ghostwhite;
+}
+
+/* line 173, ../../app/styles/app.scss */
+.footer {
+  background: #292f33;
+  -webkit-transition: all 0.25s ease-in;
+  -moz-transition: all 0.25s ease-in;
+  -o-transition: all 0.25s ease-in;
+  transition: all 0.25s ease-in;
+  opacity: 1.0;
+}
+
+/* line 179, ../../app/styles/app.scss */
+.faded {
+  opacity: 0;
+}
+
+/* line 183, ../../app/styles/app.scss */
+.footer p {
+  text-align: center;
+  color: ghostwhite;
+  margin: 1rem 0.5rem;
+  font-size: 1.5rem;
+}
+
+/* line 190, ../../app/styles/app.scss */
+.footer a {
+  color: ghostwhite;
+  text-decoration: none;
+  -webkit-transition: all 0.25s ease-in;
+  -moz-transition: all 0.25s ease-in;
+  -o-transition: all 0.25s ease-in;
+  transition: all 0.25s ease-in;
+}
+
+/* line 196, ../../app/styles/app.scss */
+.footer a:hover {
+  background: ghostwhite;
+  color: #292f33;
+  text-decoration: underline;
+}
+
 @media only screen and (max-device-width: 480px) {
-  /* line 158, ../../app/styles/app.scss */
+  /* line 204, ../../app/styles/app.scss */
   html {
     -webkit-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
@@ -163,30 +200,58 @@ p {
 }
 /* Smartphones (portrait and landscape) ----------- */
 @media screen and (min-width: 320px) and (max-width: 640px) {
-  /* line 166, ../../app/styles/app.scss */
+  /* line 212, ../../app/styles/app.scss */
   .hide-mobile {
     display: none;
   }
 }
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  /* line 218, ../../app/styles/app.scss */
+  .hi {
+    font-size: 11rem;
+  }
+
+  /* line 221, ../../app/styles/app.scss */
+  .hi.type {
+    margin-top: 25%;
+  }
+
+  /* line 224, ../../app/styles/app.scss */
+  .title {
+    font-size: 5rem;
+    margin-left: 2%;
+    margin-top: 0;
+  }
+
+  /* line 229, ../../app/styles/app.scss */
+  .subtitle {
+    font-size: 3rem;
+  }
+}
 @media screen and (min-width: 320px) and (max-width: 720px) {
-  /* line 172, ../../app/styles/app.scss */
+  /* line 236, ../../app/styles/app.scss */
   .hi {
     font-size: 7rem;
   }
 
-  /* line 175, ../../app/styles/app.scss */
+  /* line 240, ../../app/styles/app.scss */
+  .hi.type {
+    margin-top: 25%;
+  }
+
+  /* line 244, ../../app/styles/app.scss */
   .title {
     font-size: 3.3rem;
     margin-left: 2%;
     margin-top: 0;
   }
 
-  /* line 180, ../../app/styles/app.scss */
+  /* line 249, ../../app/styles/app.scss */
   .subtitle {
     font-size: 2.2rem;
   }
 
-  /* line 183, ../../app/styles/app.scss */
+  /* line 252, ../../app/styles/app.scss */
   p {
     font-size: 1.3rem;
   }
@@ -196,25 +261,52 @@ p {
 	Index Page
 
 --------------------------------------------------------------------- **/
-/* line 197, ../../app/styles/app.scss */
+/* line 266, ../../app/styles/app.scss */
 #cover {
   background: url("../images/bg.jpg") no-repeat center center fixed;
   background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   position: relative;
+  overflow: hidden;
   display: table;
   height: 100%;
   width: 100%;
 }
 
+/* line 280, ../../app/styles/app.scss */
+.filter {
+  position: relative;
+  overflow: hidden;
+  display: table;
+  height: 100%;
+  width: 100%;
+  -webkit-transition: all 0.25s ease-in;
+  -moz-transition: all 0.25s ease-in;
+  -o-transition: all 0.25s ease-in;
+  transition: all 0.25s ease-in;
+}
+
+/* line 289, ../../app/styles/app.scss */
+.filter.light {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* line 293, ../../app/styles/app.scss */
+.filter.dark {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
 /* Centered texts in each section
 * --------------------------------------- */
-/* line 210, ../../app/styles/app.scss */
+/* line 300, ../../app/styles/app.scss */
 .section {
   text-align: center;
   position: relative;
 }
 
-/* line 216, ../../app/styles/app.scss */
+/* line 306, ../../app/styles/app.scss */
 .profile-pic {
   width: 90%;
   max-width: 500px;
@@ -222,13 +314,13 @@ p {
   display: inline-block;
 }
 
-/* line 225, ../../app/styles/app.scss */
+/* line 315, ../../app/styles/app.scss */
 .about p {
   float: left;
   margin-top: 0;
 }
 
-/* line 232, ../../app/styles/app.scss */
+/* line 322, ../../app/styles/app.scss */
 .code p, .beats p, .photos p {
   float: left;
   margin-top: 0;
@@ -236,14 +328,14 @@ p {
   font-weight: normal;
 }
 
-/* line 240, ../../app/styles/app.scss */
+/* line 330, ../../app/styles/app.scss */
 .symbol {
   text-align: center;
   min-height: 255px;
 }
 
 /** CODE **/
-/* line 252, ../../app/styles/app.scss */
+/* line 342, ../../app/styles/app.scss */
 .monitor-container {
   position: relative;
   display: inline-block;
@@ -251,7 +343,7 @@ p {
   width: 300px;
   height: 200px;
 }
-/* line 258, ../../app/styles/app.scss */
+/* line 348, ../../app/styles/app.scss */
 .monitor-container .base {
   width: 75px;
   height: 40px;
@@ -263,14 +355,14 @@ p {
   -ms-transform: translate(-50%, 50%);
   transform: translate(-50%, 50%);
 }
-/* line 269, ../../app/styles/app.scss */
+/* line 359, ../../app/styles/app.scss */
 .monitor-container .monitor {
   position: relative;
   width: 300px;
   height: 200px;
   overflow: hidden;
 }
-/* line 274, ../../app/styles/app.scss */
+/* line 364, ../../app/styles/app.scss */
 .monitor-container .monitor .screen {
   box-sizing: border-box;
   width: 100%;
@@ -281,7 +373,7 @@ p {
   overflow: hidden;
   position: relative;
 }
-/* line 285, ../../app/styles/app.scss */
+/* line 375, ../../app/styles/app.scss */
 .monitor-container .monitor .text-container {
   display: table-cell;
   vertical-align: middle;
@@ -289,12 +381,12 @@ p {
   font-weight: bold;
   font-size: 66.66667px;
 }
-/* line 291, ../../app/styles/app.scss */
+/* line 381, ../../app/styles/app.scss */
 .monitor-container .monitor .text-container .text {
   text-align: center;
   display: inline-block;
 }
-/* line 297, ../../app/styles/app.scss */
+/* line 387, ../../app/styles/app.scss */
 .monitor-container .monitor .text-container .left, .monitor-container .monitor .text-container .right {
   position: absolute;
   top: 50%;
@@ -306,27 +398,27 @@ p {
   -o-transition: all 1s ease-in;
   transition: all 1s ease-in;
 }
-/* line 309, ../../app/styles/app.scss */
+/* line 399, ../../app/styles/app.scss */
 .monitor-container .monitor .text-container .left {
   font-size: 5rem;
   left: 25%;
 }
-/* line 313, ../../app/styles/app.scss */
+/* line 403, ../../app/styles/app.scss */
 .monitor-container .monitor .text-container.off .left {
   left: -28%;
 }
-/* line 317, ../../app/styles/app.scss */
+/* line 407, ../../app/styles/app.scss */
 .monitor-container .monitor .text-container .right {
   font-size: 5rem;
   right: 25%;
 }
-/* line 321, ../../app/styles/app.scss */
+/* line 411, ../../app/styles/app.scss */
 .monitor-container .monitor .text-container.off .right {
   right: -28%;
 }
 
 /** MUSIC **/
-/* line 340, ../../app/styles/app.scss */
+/* line 430, ../../app/styles/app.scss */
 .mpc {
   display: inline-block;
   background: black;
@@ -337,7 +429,7 @@ p {
   margin-bottom: 5%;
 }
 
-/* line 351, ../../app/styles/app.scss */
+/* line 441, ../../app/styles/app.scss */
 .lcd {
   background: white;
   width: 30%;
@@ -348,7 +440,7 @@ p {
   border-radius: 2px;
 }
 
-/* line 362, ../../app/styles/app.scss */
+/* line 452, ../../app/styles/app.scss */
 .pads {
   position: absolute;
   width: 50%;
@@ -357,13 +449,13 @@ p {
   bottom: 7%;
 }
 
-/* line 370, ../../app/styles/app.scss */
+/* line 460, ../../app/styles/app.scss */
 .pad-row {
   height: 25%;
   width: 100%;
 }
 
-/* line 375, ../../app/styles/app.scss */
+/* line 465, ../../app/styles/app.scss */
 .pad {
   height: 100%;
   width: 25%;
@@ -373,7 +465,7 @@ p {
   box-sizing: border-box;
 }
 
-/* line 384, ../../app/styles/app.scss */
+/* line 474, ../../app/styles/app.scss */
 .turntable {
   position: relative;
   display: inline-block;
@@ -389,14 +481,14 @@ p {
   -o-transition: -o-transform 8000ms linear;
   transition: transform 8000ms linear;
 }
-/* line 398, ../../app/styles/app.scss */
+/* line 488, ../../app/styles/app.scss */
 .turntable.on {
   -webkit-transform: rotate(1440deg);
   -o-transform: rotate(1440deg);
   transform: rotate(1440deg);
 }
 
-/* line 405, ../../app/styles/app.scss */
+/* line 495, ../../app/styles/app.scss */
 .line {
   position: absolute;
   left: 50%;
@@ -409,49 +501,49 @@ p {
   border-radius: 50%;
 }
 
-/* line 417, ../../app/styles/app.scss */
+/* line 507, ../../app/styles/app.scss */
 .line1 {
   width: 100%;
   height: 100%;
 }
 
-/* line 423, ../../app/styles/app.scss */
+/* line 513, ../../app/styles/app.scss */
 .line3 {
   width: 85%;
   height: 85%;
 }
 
-/* line 429, ../../app/styles/app.scss */
+/* line 519, ../../app/styles/app.scss */
 .line2 {
   width: 95%;
   height: 95%;
 }
 
-/* line 434, ../../app/styles/app.scss */
+/* line 524, ../../app/styles/app.scss */
 .line4 {
   width: 75%;
   height: 75%;
 }
 
-/* line 439, ../../app/styles/app.scss */
+/* line 529, ../../app/styles/app.scss */
 .line5 {
   width: 65%;
   height: 65%;
 }
 
-/* line 444, ../../app/styles/app.scss */
+/* line 534, ../../app/styles/app.scss */
 .line6 {
   width: 55%;
   height: 55%;
 }
 
-/* line 449, ../../app/styles/app.scss */
+/* line 539, ../../app/styles/app.scss */
 .line7 {
   width: 45%;
   height: 45%;
 }
 
-/* line 454, ../../app/styles/app.scss */
+/* line 544, ../../app/styles/app.scss */
 .line8 {
   border-style: solid;
   background: grey;
@@ -460,7 +552,7 @@ p {
   height: 1%;
 }
 
-/* line 462, ../../app/styles/app.scss */
+/* line 552, ../../app/styles/app.scss */
 .music-symbol-container {
   text-align: center;
   overflow: hidden;
@@ -470,7 +562,7 @@ p {
 }
 
 /** Photos **/
-/* line 473, ../../app/styles/app.scss */
+/* line 563, ../../app/styles/app.scss */
 .camera {
   margin-top: 20px;
   display: inline-block;
@@ -482,7 +574,7 @@ p {
   border: 1px solid black;
 }
 
-/* line 484, ../../app/styles/app.scss */
+/* line 574, ../../app/styles/app.scss */
 .camera .button {
   width: 20px;
   height: 20px;
@@ -498,7 +590,7 @@ p {
   transition: all 0.5 linear 0.5s;
 }
 
-/* line 499, ../../app/styles/app.scss */
+/* line 589, ../../app/styles/app.scss */
 .camera.on .button {
   -webkit-transform: translateY(35%);
   -moz-transform: translateY(35%);
@@ -506,7 +598,7 @@ p {
   transform: translateY(35%);
 }
 
-/* line 506, ../../app/styles/app.scss */
+/* line 596, ../../app/styles/app.scss */
 .camera .lens {
   width: 100px;
   height: 100px;
@@ -518,10 +610,10 @@ p {
   border: 5px solid #1d1f20;
 }
 
-/* line 517, ../../app/styles/app.scss */
+/* line 607, ../../app/styles/app.scss */
 .camera .lens .eye {
-  width: 24px;
-  height: 24px;
+  width: 35px;
+  height: 35px;
   background: white;
   position: absolute;
   left: 50%;
@@ -538,7 +630,7 @@ p {
   transition: all 0.5s linear 0.5s;
 }
 
-/* line 536, ../../app/styles/app.scss */
+/* line 626, ../../app/styles/app.scss */
 .camera.on .eye {
   width: 2px;
   height: 2px;
@@ -546,7 +638,7 @@ p {
   border: 8px solid #1d1f20;
 }
 
-/* line 543, ../../app/styles/app.scss */
+/* line 633, ../../app/styles/app.scss */
 .camera .top {
   box-sizing: border-box;
   width: 274px;
@@ -558,7 +650,7 @@ p {
   background: white;
 }
 
-/* line 554, ../../app/styles/app.scss */
+/* line 644, ../../app/styles/app.scss */
 .camera .top .finder {
   width: 27px;
   height: 22px;
@@ -569,7 +661,7 @@ p {
   border: 2px solid black;
 }
 
-/* line 564, ../../app/styles/app.scss */
+/* line 654, ../../app/styles/app.scss */
 .camera .top .logo {
   width: 20px;
   height: 19px;
@@ -582,24 +674,24 @@ p {
 
 /** ---------------------------------------------------------------------
 --------------------------------------------------------------------- **/
-/* line 580, ../../app/styles/app.scss */
+/* line 670, ../../app/styles/app.scss */
 .notice {
   font-weight: bold;
 }
 
-/* line 584, ../../app/styles/app.scss */
+/* line 674, ../../app/styles/app.scss */
 .underline {
   text-decoration: underline;
 }
 
-/* line 591, ../../app/styles/app.scss */
+/* line 681, ../../app/styles/app.scss */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 597, ../../app/styles/app.scss */
+/* line 687, ../../app/styles/app.scss */
 .pure-u-0 {
   width: 0%;
 }
