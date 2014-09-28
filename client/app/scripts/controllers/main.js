@@ -7,7 +7,7 @@
  * # MainCtrl
  * Controller of the antoniocapeloApp
  */
-angular.module('antoniocapeloApp')
+angular.module('antoniocapeloCom')
     .controller('MainCtrl', function($scope) {
         $scope.awesomeThings = [
             'HTML5 Boilerplate',
@@ -18,6 +18,5 @@ angular.module('antoniocapeloApp')
 			// init AWTY instance
 			var awtyInstance = new Awty();
 			awtyInstance.init();
-			console.log(awtyInstance);
         });
     });

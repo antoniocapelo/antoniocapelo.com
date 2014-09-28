@@ -1,0 +1,1463 @@
+/*------------------------------------------------------------------
+
+Project:    Crumpet
+Version:	1.0
+
+###
+
+Crumpet is a deliciously simple SASS/SCSS responsive framework that keeps 
+your HTML clean & stays out of your way.
+
+Any problems, ideas or questions post an issue, hit me up on twitter @AdamMarsdenUK 
+or find some other fancy way to get in touch, it's the 21st century after all.
+
+Built with flour & yeast by Adam Marsden - adam-marsden.co.uk
+
+------------------------------------------------------------------*/
+/* Width of containers */
+/* Responsive Break Points */
+/* Resets */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/bower_components\/crumpet\/css\/scss\/settings\.scss}line{font-family:\0000332}}
+* {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Body */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/bower_components\/crumpet\/css\/scss\/settings\.scss}line{font-family:\0000343}}
+body {
+  font: 1em/1.5em 'Source Sans Pro', sans-serif;
+  color: #707070;
+}
+
+/*------------------------------------------------------------------
+
+[Grid - Desktop]
+
+To set the width of a column on desktops do this:
+
+	@extend %grid-*a number*;
+
+You make certain classes not display on desktop by adding:
+
+	@extend %desktop_none;
+
+------------------------------------------------------------------*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/bower_components\/crumpet\/css\/scss\/settings\.scss}line{font-family:\0000363}}
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/bower_components\/crumpet\/css\/scss\/settings\.scss}line{font-family:\0000368}}
+.row {
+  padding: 10px 0;
+  zoom: 1;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/bower_components\/crumpet\/css\/scss\/settings\.scss}line{font-family:\0000374}}
+.row:before, .row:after {
+  content: "";
+  display: table;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/bower_components\/crumpet\/css\/scss\/settings\.scss}line{font-family:\0000380}}
+.row:after {
+  clear: both;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/bower_components\/crumpet\/css\/scss\/settings\.scss}line{font-family:\0000385}}
+.col {
+  float: left;
+}
+
+/* Grid widths */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/bower_components\/crumpet\/css\/scss\/settings\.scss}line{font-family:\0000394}}
+.name {
+  width: 16.66667%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/bower_components\/crumpet\/css\/scss\/settings\.scss}line{font-family:\0000395}}
+.profile-pic {
+  width: 25%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/bower_components\/crumpet\/css\/scss\/settings\.scss}line{font-family:\0000396}}
+.symbol {
+  width: 33%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/bower_components\/crumpet\/css\/scss\/settings\.scss}line{font-family:\00003100}}
+.code .desc, .blog .desc, .beats .desc, .photos .desc {
+  width: 66.66666%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/bower_components\/crumpet\/css\/scss\/settings\.scss}line{font-family:\00003101}}
+.desc {
+  width: 75%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/bower_components\/crumpet\/css\/scss\/settings\.scss}line{font-family:\00003102}}
+.your {
+  width: 83.33333%;
+}
+
+@media only screen and (min-width: 960px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/bower_components\/crumpet\/css\/scss\/settings\.scss}line{font-family:\00003107}}
+  .classes, .whatever, .you, .like {
+    display: none;
+  }
+}
+/*------------------------------------------------------------------
+
+[Grid - Tablet]
+
+To set the width of a column on tablets do this:
+
+	@extend %tablet_grid-*a number*;
+
+You make certain classes not display on tablet by adding:
+
+	@extend %tablet_none;
+
+------------------------------------------------------------------*/
+@media only screen and (min-width: 721px) and (max-width: 960px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/bower_components\/crumpet\/css\/scss\/settings\.scss}line{font-family:\00003128}}
+  .container {
+    max-width: 700px;
+  }
+
+  /* Column widths for tablet */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/bower_components\/crumpet\/css\/scss\/settings\.scss}line{font-family:\00003136}}
+  .whatever {
+    width: 25%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/bower_components\/crumpet\/css\/scss\/settings\.scss}line{font-family:\00003142}}
+  .classes {
+    width: 75%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/bower_components\/crumpet\/css\/scss\/settings\.scss}line{font-family:\00003147}}
+  .name, .your, .you, .like {
+    display: none;
+  }
+}
+/*------------------------------------------------------------------
+
+[Grid - Mobile]
+
+To set the width of a column on mobiles do this:
+
+	@extend %mobile_grid-*a number*;
+
+or
+
+	@extend %mobile_full;
+
+for a full width column.
+
+
+You make certain classes not display on mobile by adding:
+
+	@extend %mobile_none;
+
+------------------------------------------------------------------*/
+@media only screen and (max-width: 720px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/bower_components\/crumpet\/css\/scss\/settings\.scss}line{font-family:\00003176}}
+  .container {
+    max-width: 95%;
+  }
+
+  /* Grid widths for mobile */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/bower_components\/crumpet\/css\/scss\/settings\.scss}line{font-family:\00003182}}
+  .desc, .code .desc, .blog .desc, .beats .desc, .photos .desc {
+    left: auto;
+    clear: both;
+    float: none;
+    width: 100%;
+    display: block;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/bower_components\/crumpet\/css\/scss\/settings\.scss}line{font-family:\00003190}}
+  .you, .like {
+    width: 50%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/bower_components\/crumpet\/css\/scss\/settings\.scss}line{font-family:\00003194}}
+  .name, .your, .classes, .whatever, .profile-pic, .symbol {
+    display: none;
+  }
+}
+/* Demo purposes */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/bower_components\/crumpet\/css\/scss\/main\.scss}line{font-family:\000035}}
+.col {
+  padding: 10px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/bower_components\/crumpet\/css\/scss\/main\.scss}line{font-family:\000039}}
+.preview {
+  text-align: center;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/bower_components\/crumpet\/css\/scss\/main\.scss}line{font-family:\0000313}}
+.name, .classes, .you {
+  background-color: #efefef;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/bower_components\/crumpet\/css\/scss\/main\.scss}line{font-family:\0000317}}
+.your, .whatever, .like {
+  background-color: #D3D3D3;
+}
+
+/*------------------------------------------------------------------
+
+This demo shows that you can hide any class at any time.
+
+Normally you wouldn't want to do this. You can easily change the width
+of a column by adding which size screen you would like it to break at 
+and then set the column width.
+
+	.name {
+		@extend %grid-2;
+		@extend %tablet_grid-5;
+		@extend %mobile_1-2;
+	}
+
+This example would make the class be 2 columns wide on desktop,
+5 columns wide on a tablet and half a column wide on mobile.
+
+Easy as that :)
+
+------------------------------------------------------------------*/
+/* Desktop */
+/* Tablet */
+/* Mobile */
+/*------------------------------------------------------------------
+
+Project:    Crumpet
+Version:	1.0
+
+###
+
+Crumpet is a deliciously simple SASS/SCSS responsive framework that keeps 
+your HTML clean & stays out of your way.
+
+Any problems, ideas or questions post an issue, hit me up on twitter @AdamMarsdenUK 
+or find some other fancy way to get in touch, it's the 21st century after all.
+
+Built with flour & yeast by Adam Marsden - adam-marsden.co.uk
+
+------------------------------------------------------------------*/
+/* Width of containers */
+/* Responsive Break Points */
+/* Resets */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/bower_components\/crumpet\/css\/scss\/settings\.scss}line{font-family:\0000332}}
+* {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Body */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/bower_components\/crumpet\/css\/scss\/settings\.scss}line{font-family:\0000343}}
+body {
+  font: 1em/1.5em 'Source Sans Pro', sans-serif;
+  color: #707070;
+}
+
+/*------------------------------------------------------------------
+
+[Grid - Desktop]
+
+To set the width of a column on desktops do this:
+
+	@extend %grid-*a number*;
+
+You make certain classes not display on desktop by adding:
+
+	@extend %desktop_none;
+
+------------------------------------------------------------------*/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/bower_components\/crumpet\/css\/scss\/settings\.scss}line{font-family:\0000363}}
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/bower_components\/crumpet\/css\/scss\/settings\.scss}line{font-family:\0000368}}
+.row {
+  padding: 10px 0;
+  zoom: 1;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/bower_components\/crumpet\/css\/scss\/settings\.scss}line{font-family:\0000374}}
+.row:before, .row:after {
+  content: "";
+  display: table;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/bower_components\/crumpet\/css\/scss\/settings\.scss}line{font-family:\0000380}}
+.row:after {
+  clear: both;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/bower_components\/crumpet\/css\/scss\/settings\.scss}line{font-family:\0000385}}
+.col {
+  float: left;
+}
+
+/* Grid widths */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/bower_components\/crumpet\/css\/scss\/settings\.scss}line{font-family:\0000394}}
+.name {
+  width: 16.66667%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/bower_components\/crumpet\/css\/scss\/settings\.scss}line{font-family:\0000395}}
+.profile-pic {
+  width: 25%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/bower_components\/crumpet\/css\/scss\/settings\.scss}line{font-family:\0000396}}
+.symbol {
+  width: 33%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/bower_components\/crumpet\/css\/scss\/settings\.scss}line{font-family:\00003100}}
+.code .desc, .blog .desc, .beats .desc, .photos .desc {
+  width: 66.66666%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/bower_components\/crumpet\/css\/scss\/settings\.scss}line{font-family:\00003101}}
+.desc {
+  width: 75%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/bower_components\/crumpet\/css\/scss\/settings\.scss}line{font-family:\00003102}}
+.your {
+  width: 83.33333%;
+}
+
+@media only screen and (min-width: 960px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/bower_components\/crumpet\/css\/scss\/settings\.scss}line{font-family:\00003107}}
+  .classes, .whatever, .you, .like {
+    display: none;
+  }
+}
+/*------------------------------------------------------------------
+
+[Grid - Tablet]
+
+To set the width of a column on tablets do this:
+
+	@extend %tablet_grid-*a number*;
+
+You make certain classes not display on tablet by adding:
+
+	@extend %tablet_none;
+
+------------------------------------------------------------------*/
+@media only screen and (min-width: 721px) and (max-width: 960px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/bower_components\/crumpet\/css\/scss\/settings\.scss}line{font-family:\00003128}}
+  .container {
+    max-width: 700px;
+  }
+
+  /* Column widths for tablet */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/bower_components\/crumpet\/css\/scss\/settings\.scss}line{font-family:\00003136}}
+  .whatever {
+    width: 25%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/bower_components\/crumpet\/css\/scss\/settings\.scss}line{font-family:\00003142}}
+  .classes {
+    width: 75%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/bower_components\/crumpet\/css\/scss\/settings\.scss}line{font-family:\00003147}}
+  .name, .your, .you, .like {
+    display: none;
+  }
+}
+/*------------------------------------------------------------------
+
+[Grid - Mobile]
+
+To set the width of a column on mobiles do this:
+
+	@extend %mobile_grid-*a number*;
+
+or
+
+	@extend %mobile_full;
+
+for a full width column.
+
+
+You make certain classes not display on mobile by adding:
+
+	@extend %mobile_none;
+
+------------------------------------------------------------------*/
+@media only screen and (max-width: 720px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/bower_components\/crumpet\/css\/scss\/settings\.scss}line{font-family:\00003176}}
+  .container {
+    max-width: 95%;
+  }
+
+  /* Grid widths for mobile */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/bower_components\/crumpet\/css\/scss\/settings\.scss}line{font-family:\00003182}}
+  .desc, .code .desc, .blog .desc, .beats .desc, .photos .desc {
+    left: auto;
+    clear: both;
+    float: none;
+    width: 100%;
+    display: block;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/bower_components\/crumpet\/css\/scss\/settings\.scss}line{font-family:\00003190}}
+  .you, .like {
+    width: 50%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/bower_components\/crumpet\/css\/scss\/settings\.scss}line{font-family:\00003194}}
+  .name, .your, .classes, .whatever, .profile-pic, .symbol {
+    display: none;
+  }
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\0000318}}
+* {
+  font-family: 'Lato', sans-serif;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #292f33;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\0000323}}
+html, body {
+  margin: 0;
+  height: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\0000327}}
+html {
+  font-size: 16px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\0000330}}
+body {
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  background: ghostwhite;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\0000335}}
+.app-container {
+  height: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\0000337}}
+.app-container > div {
+  height: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\0000342}}
+.hi {
+  font-size: 9rem;
+  color: ghostwhite;
+  opacity: 0.9;
+  text-align: center;
+  font-weight: 500;
+  line-height: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\0000349}}
+.hi.type {
+  text-align: left;
+  margin: 0 5% 0 5%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\0000354}}
+.blink {
+  color: ghostwhite;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\0000357}}
+.who-am-i {
+  background: rgba(255, 255, 255, 0.4);
+  text-align: left;
+  color: #3f3f3f;
+  padding: 0 5%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\0000363}}
+.title {
+  font-size: 4rem;
+  margin: 2% 0;
+  line-height: 100%;
+  color: #3F515F;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\0000369}}
+.subtitle {
+  padding: 1rem 2rem;
+  font-size: 3rem;
+  line-height: 100%;
+  margin-top: 2rem;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\0000376}}
+p {
+  font-size: 1.1rem;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\0000379}}
+.be-patient {
+  color: white;
+  opacity: 0.8;
+  text-align: center;
+  font-size: 2rem;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\0000385}}
+.icon-set {
+  padding-left: 0;
+  margin-top: 2rem;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\0000391}}
+.icon-element {
+  display: inline-block;
+  margin: 10px 3rem;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\0000394}}
+.icon-element i {
+  color: ghostwhite;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\0000398}}
+.icon {
+  display: block;
+  font-size: 4.5rem;
+  padding: 15px 30px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  -webkit-transition: all 0.25s ease-in;
+          transition: all 0.25s ease-in;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003104}}
+.icon .hover-circle {
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  -webkit-transition: all 0.25s ease-in;
+          transition: all 0.25s ease-in;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003116}}
+.icon:hover .fa, .icon:active .fa, .icon:focus .fa {
+  -webkit-transition: color 0.25s ease-in;
+          transition: color 0.25s ease-in;
+  color: #292F33;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003120}}
+.icon:hover .hover-circle, .icon:active .hover-circle, .icon:focus .hover-circle {
+  width: 6rem;
+  height: 6rem;
+  background: white;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003126}}
+.icon.twitter {
+  font-size: 5rem;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003131}}
+.part {
+  margin: 20px auto;
+  max-width: 960px;
+  overflow: hidden;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003137}}
+.part .divider {
+  height: 1px;
+  width: 0%;
+  border-bottom: 1px solid #647167;
+  margin: 0 auto;
+  display: block;
+  clear: both;
+  -webkit-transition: width 0.65s ease-in;
+          transition: width 0.65s ease-in;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003146}}
+.part.active .divider {
+  width: 80%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003149}}
+.nav {
+  padding: 0 0.2rem;
+  color: #3F515F;
+  font-weight: bold;
+  -webkit-transition: all 0.25s ease-in;
+          transition: all 0.25s ease-in;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003156}}
+.nav:hover {
+  background: #647167;
+  color: ghostwhite;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003160}}
+.footer {
+  background: #292f33;
+  -webkit-transition: all 0.25s ease-in;
+          transition: all 0.25s ease-in;
+  opacity: 1.0;
+  float: left;
+  clear: both;
+  width: 100%;
+  line-height: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003169}}
+.faded {
+  opacity: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003172}}
+.footer p {
+  text-align: center;
+  color: ghostwhite;
+  margin: 1rem 0.5rem;
+  font-size: 1.5rem;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003178}}
+.footer a {
+  color: ghostwhite;
+  text-decoration: none;
+  -webkit-transition: all 0.25s ease-in;
+          transition: all 0.25s ease-in;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003183}}
+.footer a:hover {
+  background: ghostwhite;
+  color: #292f33;
+  text-decoration: underline;
+}
+
+/****************************** Responsive Stuf **********************************/
+@media only screen and (max-device-width: 480px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003193}}
+  html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+  }
+}
+/* Smartphones (portrait and landscape) ----------- */
+@media screen and (min-width: 320px) and (max-width: 720px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003202}}
+  .hide-mobile {
+    display: none !important;
+  }
+}
+@media screen and (min-width: 721px) and (max-width: 1024px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003208}}
+  .hi {
+    font-size: 8rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003211}}
+  .icon-element {
+    float: left;
+    width: 25%;
+    margin: 0;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003216}}
+  .desc {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003220}}
+  .title {
+    font-size: 3rem;
+    margin-left: 2%;
+    margin-top: 0;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003225}}
+  .subtitle {
+    font-size: 2rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003228}}
+  i.fa {
+    font-size: 4.5rem;
+  }
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 720px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003234}}
+  .hi {
+    font-size: 4rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003237}}
+  .title {
+    font-size: 2.3rem;
+    margin-left: 2%;
+    margin-top: 0;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003242}}
+  .subtitle {
+    font-size: 1.28rem;
+    line-height: 110%;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003246}}
+  p {
+    font-size: 1.1rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003249}}
+  .icon {
+    padding: 3px 10px;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003252}}
+  .icon-element {
+    margin: 0.3rem 0.6rem;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003255}}
+  i.fa {
+    font-size: 2.6rem;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 720px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003260}}
+  .title {
+    font-size: 2.3rem;
+    margin-left: 2%;
+    margin-top: 0;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003265}}
+  p {
+    font-size: 1.1rem;
+  }
+}
+/** --------------------------------------------------------------------- 
+
+  Index Page
+
+--------------------------------------------------------------------- **/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003276}}
+#cover {
+  background: url("../images/bg.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+          background-size: cover;
+  position: relative;
+  overflow: hidden;
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003285}}
+.cover-content {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003292}}
+.filter {
+  position: relative;
+  overflow: hidden;
+  display: table;
+  height: 100%;
+  width: 100%;
+  -webkit-transition: all 0.25s ease-in;
+          transition: all 0.25s ease-in;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003300}}
+.filter {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003303}}
+.filter.dark {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003307}}
+.arrow {
+  width: 20px;
+  height: 20px;
+  border: 5px solid #FFF;
+  border-right: none;
+  border-top: none;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  position: absolute;
+  bottom: 20px;
+  right: 50%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003318}}
+.arrow.active {
+  -webkit-animation: appearArrow 2.5s;
+          animation: appearArrow 2.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003322}}
+.arrow:nth-child(2) {
+  bottom: 40px;
+}
+
+@-webkit-keyframes appearArrow {
+  0% {
+    -webkit-transform: translateY(-100px) rotate(-45deg);
+            transform: translateY(-100px) rotate(-45deg);
+    opacity: 0.0;
+  }
+  50% {
+    -webkit-transform: translateY(-100px) rotate(-45deg);
+            transform: translateY(-100px) rotate(-45deg);
+    opacity: 0.0;
+  }
+  100% {
+    -webkit-transform: translateY(0px) rotate(-45deg);
+            transform: translateY(0px) rotate(-45deg);
+    opacity: 1.0;
+  }
+}
+
+@keyframes appearArrow {
+  0% {
+    -webkit-transform: translateY(-100px) rotate(-45deg);
+            transform: translateY(-100px) rotate(-45deg);
+    opacity: 0.0;
+  }
+  50% {
+    -webkit-transform: translateY(-100px) rotate(-45deg);
+            transform: translateY(-100px) rotate(-45deg);
+    opacity: 0.0;
+  }
+  100% {
+    -webkit-transform: translateY(0px) rotate(-45deg);
+            transform: translateY(0px) rotate(-45deg);
+    opacity: 1.0;
+  }
+}
+/* Centered texts in each section
+* --------------------------------------- */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003347}}
+.section {
+  text-align: center;
+  position: relative;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003351}}
+.profile-pic {
+  max-width: 500px;
+  float: left;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  border: 2px solid #292F33;
+  margin-bottom: 20px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003360}}
+.desc {
+  float: left;
+  padding: 1rem;
+  line-height: 200%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003368}}
+.main-content {
+  width: 100%;
+  float: left;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003373}}
+.about p {
+  float: left;
+  margin-top: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003379}}
+.code p, .beats p, .photos p {
+  float: left;
+  margin-top: 0;
+  font-weight: normal;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003385}}
+.symbol {
+  text-align: center;
+  min-height: 230px;
+  padding-bottom: 20px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003392}}
+.code .symbol {
+  float: right;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003399}}
+.blog .symbol {
+  float: left;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003402}}
+.blog .desc {
+  float: right;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003407}}
+.beats .symbol {
+  float: right;
+  min-height: 0px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003411}}
+.beats .desc {
+  float: left;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003416}}
+.photos .symbol {
+  float: left;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003419}}
+.photos .desc {
+  float: right;
+}
+
+/** CODE **/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003433}}
+.monitor-container {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 40px;
+  width: 95%;
+  height: 180px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003439}}
+.monitor-container .base {
+  width: 75px;
+  height: 40px;
+  background: #292F33;
+  position: absolute;
+  left: 50%;
+  bottom: -20px;
+  -webkit-transform: translate(-50%, 50%);
+      -ms-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003448}}
+.monitor-container .monitor {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  overflow: hidden;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003453}}
+.monitor-container .monitor .screen {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  border: 20px solid #292F33;
+  -webkit-border-radius: 7%;
+          border-radius: 7%;
+  display: table;
+  overflow: hidden;
+  position: relative;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003463}}
+.monitor-container .monitor .text-container {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  font-weight: bold;
+  font-size: 60px;
+  position: relative;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003470}}
+.monitor-container .monitor .text-container .text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003476}}
+.monitor-container .monitor .text-container .left, .monitor-container .monitor .text-container .right {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-transition: all 1s ease-in;
+          transition: all 1s ease-in;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003482}}
+.monitor-container .monitor .text-container .left {
+  font-size: 5rem;
+  left: -28%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003486}}
+.monitor-container .monitor .text-container .right {
+  font-size: 5rem;
+  right: -28%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003494}}
+.code.active .text-container .left {
+  left: 23%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003497}}
+.code.active .text-container .right {
+  right: 23%;
+}
+
+/** MUSIC **/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003512}}
+.mpc {
+  display: inline-block;
+  background: #292F33;
+  width: 220px;
+  height: 190px;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+  position: relative;
+  margin-bottom: 5%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003521}}
+.lcd {
+  background: white;
+  width: 30%;
+  height: 10%;
+  position: absolute;
+  top: 10%;
+  left: 7%;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003530}}
+.pads {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  right: 7%;
+  bottom: 7%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003537}}
+.pad-row {
+  height: 25%;
+  width: 100%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003541}}
+.pad {
+  height: 100%;
+  width: 25%;
+  background: white;
+  float: left;
+  border: 1px solid #292F33;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003550}}
+.beats.active .turntable {
+  -webkit-transform: rotate(720deg);
+      -ms-transform: rotate(720deg);
+          transform: rotate(720deg);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003554}}
+.turntable {
+  position: relative;
+  display: block;
+  margin-top: 0 auto;
+  width: 190px;
+  height: 190px;
+  background: #292F33;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  -webkit-transition: -webkit-transform 8000ms linear;
+          transition: transform 8000ms linear;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003563}}
+.turntable .line {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border: 2px grey;
+  border-style: none solid none solid;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003572}}
+.turntable .line1 {
+  width: 100%;
+  height: 100%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003576}}
+.turntable .line3 {
+  width: 85%;
+  height: 85%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003580}}
+.turntable .line2 {
+  width: 95%;
+  height: 95%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003584}}
+.turntable .line4 {
+  width: 75%;
+  height: 75%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003588}}
+.turntable .line5 {
+  width: 65%;
+  height: 65%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003592}}
+.turntable .line6 {
+  width: 55%;
+  height: 55%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003596}}
+.turntable .line7 {
+  width: 45%;
+  height: 45%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003600}}
+.turntable .line8 {
+  border-style: solid;
+  background: grey;
+  border-width: 2px;
+  width: 1%;
+  height: 1%;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003608}}
+.music-symbol-container {
+  text-align: center;
+  overflow: hidden;
+  min-width: 400px;
+  display: inline-block;
+}
+
+/** Photos **/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003616}}
+.camera {
+  margin-top: 20px;
+  display: inline-block;
+  width: 95%;
+  max-width: 300px;
+  height: 150px;
+  background: #292F33;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  position: relative;
+  border: 1px solid #292F33;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003627}}
+.camera .button {
+  width: 20px;
+  height: 20px;
+  background: white;
+  position: absolute;
+  left: 10px;
+  top: -14px;
+  border: 3px solid #292F33;
+  z-index: -1;
+  -webkit-transition: all 0.5 linear 0.5s;
+          transition: all 0.5 linear 0.5s;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003638}}
+.photos.active .button {
+  -webkit-transform: translateY(35%);
+      -ms-transform: translateY(35%);
+          transform: translateY(35%);
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003641}}
+.camera .lens {
+  width: 100px;
+  height: 100px;
+  background: white;
+  position: absolute;
+  right: 30px;
+  bottom: 20px;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  border: 5px solid #1d1f20;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003651}}
+.camera .lens .eye {
+  width: 35px;
+  height: 35px;
+  background: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+  border: 4px solid #1d1f20;
+  -webkit-transition: all 0.5s linear 0.5s;
+          transition: all 0.5s linear 0.5s;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003663}}
+.photos.active .eye {
+  width: 2px;
+  height: 2px;
+  background: #292F33;
+  border: 8px solid #1d1f20;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003669}}
+.camera .top {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  height: 50px;
+  background: white;
+  position: absolute;
+  left: 0;
+  top: 2px;
+  background: white;
+  border-left: 2px solid #000;
+  border-right: 2px solid #000;
+  -webkit-border-radius: 5px 5px 0 0;
+          border-radius: 5px 5px 0 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003682}}
+.camera .top .finder {
+  width: 27px;
+  height: 22px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  border: 2px solid #292F33;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003691}}
+.camera .top .logo {
+  width: 20px;
+  height: 19px;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  background: red;
+  -webkit-border-radius: 50%;
+          border-radius: 50%;
+}
+
+/** BLOG **/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003707}}
+.pencil {
+  display: block;
+  width: 30px;
+  background: #292F33;
+  height: 170px;
+  position: relative;
+  -webkit-transform-origin: bottom left;
+      -ms-transform-origin: bottom left;
+          transform-origin: bottom left;
+  -webkit-transform-style: preserve-3D;
+          transform-style: preserve-3D;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003716}}
+.pencil-container {
+  position: relative;
+  margin-left: 10px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003719}}
+.pencil-container .line {
+  position: absolute;
+  left: 15px;
+  bottom: -33px;
+  width: 0;
+  height: 3px;
+  background: #292F33;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003727}}
+.pencil-container .point {
+  position: absolute;
+  bottom: -30px;
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 30px solid #292F33;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003738}}
+.blog.active .pencil {
+  -webkit-animation: pencil-move 1s;
+          animation: pencil-move 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003742}}
+.blog.active .line {
+  -webkit-animation: draw 1s;
+          animation: draw 1s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes pencil-move {
+  0% {
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg);
+  }
+  30% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+  100% {
+    -webkit-transform: translate(185px, 0) rotate(10deg);
+            transform: translate(185px, 0) rotate(10deg);
+  }
+}
+
+@keyframes pencil-move {
+  0% {
+    -webkit-transform: rotate(2deg);
+            transform: rotate(2deg);
+  }
+  30% {
+    -webkit-transform: rotate(15deg);
+            transform: rotate(15deg);
+  }
+  100% {
+    -webkit-transform: translate(185px, 0) rotate(10deg);
+            transform: translate(185px, 0) rotate(10deg);
+  }
+}
+@-webkit-keyframes draw {
+  32% {
+    width: 0px;
+  }
+  100% {
+    width: 180px;
+  }
+}
+@keyframes draw {
+  32% {
+    width: 0px;
+  }
+  100% {
+    width: 180px;
+  }
+}
+/** ---------------------------------------------------------------------
+--------------------------------------------------------------------- **/
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003771}}
+.notice {
+  font-weight: bold;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003774}}
+.underline {
+  text-decoration: underline;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003778}}
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003781}}
+.pure-u-0 {
+  width: 0%;
+}
+
+/** ---------------------------------------------------------------------
+--------------------------------------------------------------------- **/
+/* AngularJS 'Typewrite' Directive - Styles*/
+/* Keyframes 'vendor prefix' versions: */
+@-webkit-keyframes blink-it {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes blink-it {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* Blinking class */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antoniocapelo\/coding\/GitHub\%20Repos\/antoniocapelo\.com\/client\/app\/styles\/main\.scss}line{font-family:\00003806}}
+.blink {
+  -webkit-animation: blink-it steps(1) 1s infinite;
+          animation: blink-it steps(1) 1s infinite;
+}

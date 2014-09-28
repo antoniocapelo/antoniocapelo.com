@@ -9,7 +9,7 @@
  * Main module of the application.
  */
 angular
-  .module('antoniocapeloApp', [
+  .module('antoniocapeloCom', [
     'ngAnimate',
     'ngCookies',
     'ngResource',

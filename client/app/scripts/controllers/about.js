@@ -7,7 +7,7 @@
  * # AboutCtrl
  * Controller of the antoniocapeloApp
  */
-angular.module('antoniocapeloApp')
+angular.module('antoniocapeloCom')
   .controller('AboutCtrl', function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',

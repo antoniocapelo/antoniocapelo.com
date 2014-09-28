@@ -27,7 +27,7 @@
 	 */
 
 
-	angular.module('antoniocapeloApp').directive('typewrite', ['$timeout', function ($timeout) {
+	angular.module('antoniocapeloCom').directive('typewrite', ['$timeout', function ($timeout) {
 		function linkFunction (scope, iElement, iAttrs) {
 			var timer = null,
 				initialDelay = iAttrs.initialDelay ? getTypeDelay(iAttrs.initialDelay) : 200,
