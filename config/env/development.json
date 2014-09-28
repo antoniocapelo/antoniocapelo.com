@@ -1,7 +1,0 @@
-{
-    "db": "mongodb://localhost/mean-dev",
-    "app": {
-        "name": "antoniocapelo.com - capelo on the interwebs :) - Development"
-    },
-    "port": "2000"
-}

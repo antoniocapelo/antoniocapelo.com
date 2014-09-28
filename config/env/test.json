@@ -1,7 +1,0 @@
-{
-    "db": "mongodb://localhost/mean-test",
-    "port": 3001,
-    "app": {
-        "name": "antoniocapelo.com - capelo on the interwebs :) - Test"
-    }
-}
