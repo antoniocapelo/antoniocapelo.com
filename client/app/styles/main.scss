@@ -97,7 +97,6 @@ p {
 }
 .icon {
     display: block;
-    font-size: 4.5rem;
     padding: 15px 30px;
     border-radius: 50%;
     transition: all 0.25s ease-in;
@@ -186,87 +185,6 @@ p {
     text-decoration: underline;
 }
 
-/****************************** Responsive Stuf **********************************/
-
-// Disable iOS/WinMobile font size changes
-@media only screen and (max-device-width: 480px) {
-    html {
-        -webkit-text-size-adjust: 100%;
-        -ms-text-size-adjust: 100%;
-    }
-}
-
-
-/* Smartphones (portrait and landscape) ----------- */
-@media screen and (min-width: 320px) and (max-width: 720px) {
-    .hide-mobile {
-        display: none !important;
-    }
-}
-// TABLET
-@media screen and (min-width: 721px) and (max-width: 1024px) {
-    .hi {
-        font-size: $hi-font-size-tablet;
-    }
-    .icon-element {
-        float: left;
-        width: 25%;
-        margin: 0;
-    }
-    .desc {
-        padding-top: 0;
-        padding-bottom: 0;
-    }
-    .title {
-        font-size: $title-font-tablet;
-        margin-left: 2%;
-        margin-top: 0;
-    }
-    .subtitle {
-        font-size: $sutbtitle-font-tablet;
-    }
-    i.fa {
-        font-size: 4.5rem;
-    }
-}
-// MOBILE
-@media only screen and (min-device-width: 320px) and (max-device-width: 720px) {
-    .hi {
-        font-size: $hi-font-size-mobile;
-    }
-    .title {
-        font-size: $title-font-mobile;
-        margin-left: 2%;
-        margin-top: 0;
-    }
-    .subtitle {
-        font-size: $sutbtitle-font-mobile;
-        line-height: 110%;
-    }
-    p {
-        font-size: $p-font-mobile;
-    }
-    .icon {
-        padding: 3px 10px;
-    }
-    .icon-element {
-        margin: 0.3rem 0.6rem;
-    }
-    i.fa {
-        font-size: 2.6rem;
-    }
-}
-@media screen and (min-width: 320px) and (max-width: 720px) {
-    .title {
-        font-size: $title-font-mobile;
-        margin-left: 2%;
-        margin-top: 0;
-    }
-    p {
-        font-size: $p-font-mobile;
-    }
-}
-
 /** --------------------------------------------------------------------- 
 
   Index Page
@@ -310,11 +228,10 @@ p {
   border: 5px solid #FFF;
   border-right: none;
   border-top: none;
-  transform: rotate(-45deg);
   position: absolute;
   bottom: 20px;
   // right: 20px;
-  right: 50%;
+  left: 50%;
   &.active {
     animation: appearArrow 2.5s;
     animation-fill-mode: forwards;
@@ -327,16 +244,16 @@ p {
 
 @keyframes appearArrow {
     0% {
-        transform: translateY(-100px) rotate(-45deg);
+        transform: translate(-50%, -100px) rotate(-45deg);
         opacity: 0.0;
     }
     50% {
-        transform: translateY(-100px) rotate(-45deg);
+        transform: translate(-50%, -100px) rotate(-45deg);
         opacity: 0.0;
     }
 
     100% {
-        transform: translateY(0px) rotate(-45deg);
+        transform: translate(-50%, 0px) rotate(-45deg);
         opacity: 1.0;
     }
 }
@@ -395,6 +312,7 @@ p {
 .code .desc {
     @extend %grid-8;
     @extend %mobile_full;
+    float: left;
 }
 .blog .symbol {
     float: left;
@@ -805,4 +723,127 @@ $w:30px;
 
 .blink {
     animation: blink-it steps(1) 1s infinite;
+}
+
+
+
+/****************************** Responsive Stuf **********************************/
+
+// Disable iOS/WinMobile font size changes
+@media only screen and (max-device-width: 480px) {
+    html {
+        -webkit-text-size-adjust: 100%;
+        -ms-text-size-adjust: 100%;
+    }
+}
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media screen and (min-width: 320px) and (max-width: 720px) {
+    .hide-mobile {
+        display: none !important;
+    }
+}
+// TABLET
+@media screen and (min-width: 721px) and (max-width: 1024px) {
+    .hi {
+        font-size: $hi-font-size-tablet;
+    }
+    .icon-element {
+        float: left;
+        width: 25%;
+        margin: 0;
+    }
+    .desc {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .title {
+        font-size: $title-font-tablet;
+        margin-left: 2%;
+        margin-top: 0;
+    }
+    .subtitle {
+        font-size: $sutbtitle-font-tablet;
+    }
+    i.fa {
+        font-size: 4.5rem;
+    }
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 720px) {
+    .title {
+        font-size: $title-font-mobile;
+        margin-left: 2%;
+        margin-top: 0;
+    }
+    p {
+        font-size: $p-font-mobile;
+    }
+}
+
+// MOBILE
+@media only screen and (min-device-width: 320px) and (max-device-width: 720px) {
+    .hi {
+        font-size: $hi-font-size-mobile;
+    }
+
+    .arrow {
+        width: 10px;
+        height: 10px;
+        bottom: 10px;
+        border-width: 3px;
+        &:nth-child(2) {
+            bottom: 20px;
+        }
+    }
+    .title {
+        font-size: $title-font-mobile;
+        margin-left: 2%;
+        margin-top: 0;
+    }
+    .subtitle {
+        font-size: $sutbtitle-font-mobile;
+        line-height: 110%;
+    }
+    p {
+        font-size: $p-font-mobile;
+    }
+    .icon {
+        padding: 3px 10px;
+        &:hover, &:active, &:focus {
+            .fa {
+                color: ghostwhite;
+            }
+            .hover-circle {
+                width: 0;
+                height: 0;
+            }
+        }
+    }
+    .icon-element {
+        margin: 0.3rem 0.6rem;
+    }
+    i.fa {
+        font-size: 2.6rem;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 720px) and (orientation: landscape) {
+    .hi {
+        font-size: 2rem;
+    }
+
+    .subtitle {
+        font-size: 0.8rem;
+        line-height: 110%;
+    }
+
+    .icon-set {
+        margin-top: 0;
+        .fa {
+            font-size: 2rem;
+        }
+    }
 }
