@@ -14,6 +14,10 @@
  $p-font-desktop:1.1rem;
  $p-font-mobile:1.1rem;
 
+ // Colors
+ $cello: #3F515F;
+ $mystic: #DADADA;
+
 
 * {
     font-family: 'Lato', sans-serif;
@@ -64,7 +68,7 @@ body {
     font-size: $title-font-desktop;
     margin: 2% 0;
     line-height: 100%;
-    color: #3F515F;
+    color: $cello;
 }
 .subtitle {
     padding: 1rem 2rem;
@@ -122,6 +126,9 @@ p {
             background: white;
         }
     }
+    .fa {
+        font-size: 4.5rem;
+    }
     &.twitter {
         font-size: 5rem;
     }
@@ -148,7 +155,7 @@ p {
 .nav {
     padding: 0 0.2rem;
     // text-decoration: none;
-    color: #3F515F;
+    color: $cello;
     font-weight: bold;
     transition: all 0.25s ease-in;
 }
@@ -726,6 +733,167 @@ $w:30px;
 }
 
 
+/** ---------------------------------------------------------------------
+                        CV PAGE
+--------------------------------------------------------------------- **/
+
+.cv-container {
+    max-width: 940px;
+    margin: 3rem auto;
+    h1 {
+        color: $cello;
+    }
+}
+
+.cv-profile-pic-container {
+    @extend %grid-5;
+    @extend %tablet_grid-12;
+    // @extend %mobile_none;
+    float: left;
+}
+
+.cv-profile-pic {
+    width: 100%;
+    max-width: 250px;
+    padding: 10px;
+    border: 1px solid $mystic;
+}
+
+.cv-cover {
+    @extend %grid-8;
+    @extend %tablet_grid-12;
+    float: left;
+}
+
+.cv-header-info {
+    @extend %grid-4;
+    @extend %tablet_grid-12;
+    float: left;
+}
+
+.cv-title {
+    @extend %grid-7;
+    @extend %tablet_grid-12;
+    float: left;
+    margin-top: 120px;
+    padding-left: 10px;
+}
+
+.cv-title-main {
+    color: $cello;    
+    font-size: 2.2rem;
+    line-height: 100%;
+}
+
+.cv-title-secundary {
+    font-weight: 300;
+}
+
+.header-info-list {
+    text-align: right;    
+    margin: 40px 0 25px 0;
+}
+
+.header-info-list .header-info-icon{
+    display: inline;
+    .icon {
+        display: inline;
+        padding: 0;
+        margin: 1rem;
+        text-decoration: none;
+        font-size: 0.8rem;
+        .fa {
+            font-size: 2rem;
+        }
+    }
+
+    &:last-child .icon {
+        margin-right: 0;
+    }
+}
+
+.header-contact-list {
+    list-style-type: none;
+    float: right;
+    font-size: 0.9rem;
+}
+
+.cv-section {
+    border-top: 1px solid $mystic;
+    padding: 3rem 0;
+}
+
+.cv-desc {
+    @extend %grid-4;
+    @extend %tablet_grid-12;
+    float: left;
+    h1 {
+        font-size: 2rem;
+        font-weight: 300;
+    }
+}
+
+.cv-section-content {
+    @extend %grid-8;
+    @extend %tablet_grid-12;
+    float: left;
+}
+
+.experience-item {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid $mystic;
+    &:last-child {
+        border: none;
+        padding-bottom: 0;
+    }
+    &:first-child {
+        padding-top: 0;
+    }
+}
+
+.experience-item-title, .skill-item-title {
+    color: $cello;
+}
+
+.experience-item-where, .experience-from-to {
+    font-size: 1rem;
+    padding-left: 1rem;
+    line-height: 200%;
+}
+
+.experience-item-text {
+    font-size: 1rem;
+    padding-left: 1rem;
+}
+
+.experience-from-to {
+    font-weight: 300;
+}
+
+.skill-item {
+    @extend %grid-6;
+    padding-bottom: 1rem;
+    &:last-child {
+        padding-bottom: 0;
+    }
+    .skill-meter {
+        width: 100%;
+    }
+    .skill-item-title {
+        margin-bottom: 0.5rem;
+    }
+}
+
+meter {
+    -webkit-appearance: none; /* Reset appearance */
+}
+
+meter::-webkit-meter-bar {
+  background: none; /* Required to get rid of the default background property */
+  background-color: whiteSmoke;
+  box-shadow: 0 5px 5px -5px #333 inset;
+}
 
 /****************************** Responsive Stuf **********************************/
 
