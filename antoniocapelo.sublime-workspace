@@ -1,0 +1,1411 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"trans",
+				"transition"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"get",
+				"getMarkets"
+			],
+			[
+				"list",
+				"list-style-type"
+			],
+			[
+				"ex",
+				"extend"
+			],
+			[
+				"basef",
+				"base-font-desktop"
+			],
+			[
+				"margin",
+				"margin-right"
+			],
+			[
+				"header",
+				"header-label-width"
+			],
+			[
+				"listt",
+				"list-style"
+			],
+			[
+				"co",
+				"columnNames"
+			],
+			[
+				"col",
+				"columnNamesObj"
+			],
+			[
+				"CL",
+				"columnsAvB"
+			],
+			[
+				"mar",
+				"marketType"
+			],
+			[
+				"market",
+				"marketType"
+			],
+			[
+				"dis",
+				"displayOdds"
+			],
+			[
+				"w",
+				"windowMock"
+			],
+			[
+				"frac",
+				"fractionalOdds"
+			],
+			[
+				"tru",
+				"trueOdds"
+			],
+			[
+				"isFr",
+				"is-fractional-odds"
+			],
+			[
+				"btn",
+				"btnRunnerOdds"
+			],
+			[
+				"runn",
+				"runnersObj"
+			],
+			[
+				"marke",
+				"marketId"
+			],
+			[
+				"mark",
+				"market"
+			],
+			[
+				"MARKET",
+				"market"
+			],
+			[
+				"RU",
+				"runners"
+			],
+			[
+				"getMa",
+				"getMarketPrices"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"bor",
+				"border"
+			],
+			[
+				"border-bo",
+				"border-bottom"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"OLD",
+				"oldVal"
+			],
+			[
+				"NEW",
+				"newVal"
+			],
+			[
+				"env",
+				"environment"
+			],
+			[
+				"_",
+				"_enviromment_"
+			],
+			[
+				"fu",
+				"fun	Function"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"op",
+				"opacity"
+			],
+			[
+				"init",
+				"initialThrottles"
+			],
+			[
+				"de",
+				"devtoolsController"
+			],
+			[
+				"devt",
+				"devtoolsService"
+			],
+			[
+				"sty",
+				"styles"
+			],
+			[
+				"styl",
+				"style"
+			],
+			[
+				"devto",
+				"devtoolsJS"
+			],
+			[
+				"defe",
+				"deferredThrottles"
+			],
+			[
+				"dev",
+				"devtoolsService"
+			],
+			[
+				"updat",
+				"updateUserContext"
+			],
+			[
+				"u",
+				"updateUserContext"
+			],
+			[
+				"coll",
+				"collapsedClass"
+			],
+			[
+				"for",
+				"for	for (…) {…}"
+			],
+			[
+				"upd",
+				"updateThrottles"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"transl",
+				"translateX"
+			],
+			[
+				"inlin",
+				"inline-block"
+			],
+			[
+				"lca",
+				"localStorage"
+			],
+			[
+				"f",
+				"f	Anonymous Function"
+			],
+			[
+				"thr",
+				"throttlesObject"
+			],
+			[
+				"loca",
+				"localStorage"
+			],
+			[
+				"thb",
+				"thbc	toHaveBeenCalled"
+			],
+			[
+				"user",
+				"userContext"
+			],
+			[
+				"ds",
+				"desc	describe"
+			],
+			[
+				"exp",
+				"expected"
+			],
+			[
+				"local",
+				"localStorage1"
+			],
+			[
+				"return",
+				"returnValue"
+			],
+			[
+				"req",
+				"requestUserContext"
+			],
+			[
+				"crea",
+				"createClient"
+			],
+			[
+				"us",
+				"userService"
+			],
+			[
+				"dumm",
+				"dummyClient1"
+			],
+			[
+				"throt",
+				"_throttlesClientFactory"
+			],
+			[
+				"Dev",
+				"DevtoolsService"
+			],
+			[
+				"defer",
+				"deferredThrottles"
+			],
+			[
+				"fn",
+				"fun	Function"
+			],
+			[
+				"re",
+				"result"
+			],
+			[
+				"t",
+				"thbc	toHaveBeenCalled"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 101.0,
+		"selected_items":
+		[
+			[
+				"json",
+				"Set Syntax: JSON"
+			],
+			[
+				"blame",
+				"Git: Blame"
+			],
+			[
+				"git bl",
+				"Git: Blame"
+			],
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"prettifp",
+				"HTMLPrettify: Set Prettify Preferences"
+			],
+			[
+				"prett",
+				"HTMLPrettify"
+			],
+			[
+				"sass",
+				"Set Syntax: Sass"
+			],
+			[
+				"pretti",
+				"HTMLPrettify"
+			],
+			[
+				"pret",
+				"HTMLPrettify"
+			],
+			[
+				"ss javas",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"packageins",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Add Channel"
+			],
+			[
+				"javasc",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"set jso",
+				"Set Syntax: JSON"
+			],
+			[
+				"sublime",
+				"SublimeLinter: Disable Linting"
+			],
+			[
+				"sublimelinter",
+				"SublimeLinter: Toggle Linter"
+			],
+			[
+				"linter",
+				"SublimeLinter: Disable Linter"
+			],
+			[
+				"git diff",
+				"Git: Diff Current File"
+			],
+			[
+				"annot",
+				"Git: Toggle Annotations"
+			],
+			[
+				"git  dif",
+				"Git: Diff Current File"
+			],
+			[
+				"linter show",
+				"SublimeLinter: Show All Errors"
+			],
+			[
+				"javascri",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"retti",
+				"HTMLPrettify"
+			],
+			[
+				"jade",
+				"Set Syntax: Jade"
+			],
+			[
+				"gi st",
+				"Git: Status"
+			],
+			[
+				"git st",
+				"Git: Show Tags"
+			],
+			[
+				"git com",
+				"Git: Quick Commit"
+			],
+			[
+				"git ad",
+				"Git: Add Current File"
+			],
+			[
+				"bash",
+				"Set Syntax: Shell Script (Bash)"
+			],
+			[
+				"PRETTI",
+				"HTMLPrettify"
+			],
+			[
+				"javascr",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"jascasc",
+				"Jasmine BDD: Create spec file"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"jasmine",
+				"Snippet: jasmine.any"
+			],
+			[
+				"insta",
+				"Jasmine BDD: Switch between code and spec"
+			],
+			[
+				"set java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"git di",
+				"Git: Diff Current File"
+			],
+			[
+				"git dif",
+				"Git: Diff Current File"
+			]
+		],
+		"width": 480.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/antoniocapelo/coding/GitHub Repos/antoniocapelo.com"
+	],
+	"file_history":
+	[
+		"/Users/antoniocapelo/coding/GitHub Repos/antoniocapelo.com/client/app/styles/main.scss",
+		"/Users/antoniocapelo/coding/GitHub Repos/antoniocapelo.com/client/.sass-cache/20544466523aeaf5139d83440206bfa29b285f0e/main.scssc",
+		"/Users/antoniocapelo/coding/GitHub Repos/antoniocapelo.com/client/app/views/main.html",
+		"/Users/antoniocapelo/coding/GitHub Repos/droppin-bars-site/.tmp/styles/main.css",
+		"/Users/antoniocapelo/coding/GitHub Repos/droppin-bars-site/app/styles/main.scss",
+		"/Users/antoniocapelo/coding/GitHub Repos/droppin-bars/app/styles/bars.scss",
+		"/Users/antoniocapelo/coding/GitHub Repos/droppin-bars/bower.json",
+		"/Users/antoniocapelo/coding/GitHub Repos/droppin-bars/.tmp/styles/main.css",
+		"/Users/antoniocapelo/coding/GitHub Repos/droppin-bars/node_modules/grunt-contrib-imagemin/node_modules/imagemin/node_modules/imagemin-gifsicle/node_modules/gifsicle/node_modules/bin-build/node_modules/download/node_modules/decompress/node_modules/decompress-tar/node_modules/tar/test/extract-move.js",
+		"/Users/antoniocapelo/coding/GitHub Repos/droppin-bars/node_modules/grunt-sass/node_modules/node-sass/libsass/ast_def_macros.hpp",
+		"/Users/antoniocapelo/coding/GitHub Repos/droppin-bars/node_modules/grunt-wiredep/node_modules/wiredep/node_modules/bower-config/node_modules/mout/object/deepEquals.js",
+		"/Users/antoniocapelo/coding/GitHub Repos/droppin-bars/bower_components/jquery/src/data.js",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/package.json",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/node_modules/karma/node_modules/source-map/build/suffix-utils.jsm",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/node_modules/.bin/semver",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/node_modules/bower/node_modules/q/q.js",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/node_modules/grunt-iconizr/node_modules/iconizr/node_modules/svg-sprite/node_modules/svg-cleaner/test/files/quot-in-url.svg",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/app/target/TEST-SmokeSMXHeader.xml",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/app/target/TEST-Smokehomepage.xml",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/node_modules/karma/lib/init/state_machine.js",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/app/vendor/modernizr/feature-detects/pointerlock-api.js",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/proxies.json",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/node_modules/protractor/bin/protractor",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/node_modules/protractor/lib/protractor.js",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/node_modules/grunt-protractor-runner/tasks/protractor_runner.js",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/node_modules/protractor-html-screenshot-reporter/examples/protractor.conf.js",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/node_modules/protractor/README.md",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/node_modules/.bin/protractor",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/coverage/PhantomJS 1.9.7 (Mac OS X)/prettify.css",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/node_modules/protractor/node_modules/selenium-webdriver/lib/test/data/readOnlyPage.html",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/node_modules/protractor/node_modules/selenium-webdriver/docs/enum_goog_net_XmlHttp_OptionType.html",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/app/modules/header/source/views/header.html",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/app/modules/header/tests-smoke/header-smoke-spec.js",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/app/modules/header/tests-functional/header-functional-spec.js",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/node_modules/grunt-contrib-compress/node_modules/archiver/node_modules/tar-stream/headers.js",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/app/modules/ui-elements/coupon-subheader/tests/coupon-subheader-spec.js",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/app/modules/ui-elements/coupon-subheader/source/directives/coupon-subheader-directive.js",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/app/modules/ui-elements/coupon-subheader/source/directives/coupon-subheader.js",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/coverage/PhantomJS 1.9.7 (Mac OS X)/common/scripts/source/directives/coupon-subheader-directive.js.html",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/app/modules/ui-elements/coupon-header/source/assets/styles/coupon-header.scss",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/app/modules/ui-elements/coupon-header/tests/coupon-header-spec.js",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/app/modules/ui-elements/coupon-header/source/views/coupon-header.html",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/node_modules/bower/node_modules/tar/test/header.js",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/node_modules/bower/node_modules/tar/lib/header.js",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/app/page-objects/header/header-po.js",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/coverage/PhantomJS 1.9.7 (Mac OS X)/modules/header/source/scripts/controllers/header-controller.js.html",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/node_modules/grunt/internal-tasks/subgrunt.js",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/app/modules/ui-elements/betting-coupon-subheader/source/directives/betting-coupon-subheader.js",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/app/modules/ui-elements/betting-coupon-header/source/directives/betting-coupon-header-directive.js",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/app/common/assets/images/svg/snooker-34-yellow.svg",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/node_modules/bower/node_modules/mout/array/sortBy.js",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/app/modules/dummy-module/source/views/dummy-module.html.orig",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/app/modules/dummy-module/source/views/dummy-module.html",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/app/common/layouts/tablet/dummy.html",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/app/common/layouts/phone/dummy.html",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/node_modules/grunt-autoprefixer/node_modules/autoprefixer/node_modules/caniuse-db/region-usage-json/MY.json",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/app/page-objects/dummy-module/dummy-module-po.js",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/app/devtools/source/views/devtools.html",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/app/common/scripts/source/providers/services/generic-tracking-service.js",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/app/vendor/modernizr/feature-detects/elem-track.js",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/node_modules/grunt-contrib-uglify/node_modules/uglify-js/lib/transform.js",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/node_modules/jasmine-reporters/test/tap_reporter.html",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/node_modules/grunt-jslint/test/templates.js",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/app/modules/betting-coupon-header/source/directives/betting-coupon-header.js",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/app/common/scripts/tests/directives/coupon-subheader-directive-spec.js",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/app/common/scripts/source/directives/coupon-subheader-directive.js",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/app/common/views/coupon-subheader-directive.html",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/app/modules/markets-test/source/views/markets-test.html",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/app/common/scripts/source/configurations/route-configuration.js",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/app/common/scripts/source/providers/constants/sport-layouts-constants.js",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/app/modules/markets-test/source/scripts/controllers/markets-test-controller.js",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/app/common/assets/styles/_colors.scss",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/Gruntfile.js",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/app/devtools/source/assets/styles/devtools.scss",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/temp/common/assets/styles/application.scss",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/app/modules/header/source/assets/styles/header.scss",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/app/common/scripts/source/providers/services/fob-service.js",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/node_modules/grunt-contrib-concat/tasks/lib/comment.js",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/node_modules/grunt-complexity/complexity.json",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/app/conf.js",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/app/modules/dummy-module/source/scripts/controllers/dummy-controller.js",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/app/modules/dummy-module/tests/controllers/dummy-controller-spec.js",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/node_modules/grunt-autoprefixer/node_modules/autoprefixer/node_modules/caniuse-db/features-json/domcontentloaded.json",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/app/modules/dummy-module/tests-functional/conf.js",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/node_modules/bower/node_modules/mout/object/deepMatches.js",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/node_modules/grunt-angular-templates/test/expected/default_module.js",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/app/vendor/modernizr/feature-detects/dom-microdata.js",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/app/http-backend/bf-smx-http-popular-bets/data/dummy-module.json",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/app/modules/dummy-module/tests-smoke/dummy-smoke-spec.js",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/app/tests-e2e/dummy-e2e-spec.js",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/app/common/scripts/source/application.js",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/app/vendor/ng-extensions/dist/ng-extensions.js",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/node_modules/protractor/node_modules/selenium-webdriver/docs/namespace_goog.html",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/node_modules/grunt-contrib-uglify/node_modules/uglify-js/lib/mozilla-ast.js",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/node_modules/semver/Makefile",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/app/common/scripts/source/directives/market-directive.js",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/node_modules/bower/node_modules/glob/test/mark.js",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/app/common/assets/styles/main-retina.scss",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/node_modules/karma/node_modules/log4js/test/layouts-test.js",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/node_modules/karma/node_modules/log4js/lib/layouts.js",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/node_modules/grunt-bower-task/tasks/lib/layouts_manager.js",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/node_modules/grunt-bower-task/specs/layouts_manager_spec.js",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/node_modules/bower/node_modules/inquirer/node_modules/through/LICENSE.APACHE2",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/node_modules/bower/LICENSE",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/coverage/PhantomJS 1.9.7 (Mac OS X)/common/scripts/source/providers/constants/sport-layouts-constants.js.html",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/app/vendor/ng-sportsbook-betslip-service/dist/ng-sportsbook-betslip-service.min.js.map",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/app/vendor/ng-sportsbook-betslip-service/dist/ng-sportsbook-betslip-service.js",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/app/common/scripts/source/providers/constants/sport-keys-constants.js",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/node_modules/bower/node_modules/mout/lang/isPlainObject.js",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/node_modules/grunt-connect-proxy/test/server2_proxy_test.js",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/app/common/testUtils/testUtils.js",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/node_modules/bower/node_modules/mout/math/round.js",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/node_modules/bower/node_modules/retry/lib/retry_operation.js",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/app/modules/markets-module/source/views/markets-test.html",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/node_modules/protractor/scripts/wait_for_browser_provider.sh",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/node_modules/bower/node_modules/mout/object/forOwn.js",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/app/modules/az/source/assets/styles/az-menu.scss",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/app/common/scripts/source/providers/services/sports-service.js",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/app/page-objects/az/az-submodule-po.js",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/node_modules/karma/node_modules/log4js/test/gelfAppender-test.js",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/node_modules/protractor/node_modules/selenium-webdriver/lib/test/data/dragAndDropTest.html",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/app/common/scripts/source/environment.js",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/temp/common/assets/styles/application.css",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/.sass-cache/31b30e290e16fa7c0b256448775a4a97d3792a6f/application.scssc",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/node_modules/grunt-autoprefixer/node_modules/autoprefixer/node_modules/caniuse-db/features-json/kerning-pairs-ligatures.json",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/temp/common/assets/styles/devtools.scss",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/temp/common/assets/styles/devtools.css",
+		"/Users/antoniocapelo/workspace/smx/bf-smx-static-client/mobile-web/.sass-cache/31b30e290e16fa7c0b256448775a4a97d3792a6f/devtools.scssc"
+	],
+	"find":
+	{
+		"height": 25.0
+	},
+	"find_in_files":
+	{
+		"height": 106.0,
+		"where_history":
+		[
+			"",
+			"index.jade",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"build",
+			"<div class=\"bar-2\"><div class=\"sample bar-center\">.bar-2</div></div>",
+			"<div class=\"bar-1\"><div class=\"sample bar-center\">.bar-1</div></div>",
+			"bower ",
+			"should display the quick links module and its items.",
+			"Az menu should display the quick links module and its items.",
+			"protractor",
+			"bf-coupon-subheader",
+			"facet.sport",
+			"facet",
+			"sprite-logos-betfair-mobilelandscape",
+			"svg-promotions-34-grey",
+			".svg-genericicon-34-grey",
+			"content",
+			"before",
+			"foreach",
+			"getModelObject",
+			"foreach",
+			"foreach: ",
+			"foreach",
+			"getItems",
+			"getmodelobjects",
+			"original",
+			"sass: ",
+			"dist {",
+			"original",
+			"config.app %>/styles",
+			"original",
+			"build ",
+			"styles",
+			"uglif",
+			"el",
+			"sass",
+			"margin",
+			"bar-1",
+			"\n            ",
+			".bar",
+			".",
+			"mobile",
+			".pure - u - 1 - 12",
+			"8.3333",
+			"esconde em tablet",
+			"verse",
+			"cover {",
+			"landscape",
+			"1.1rem",
+			"4.5rem",
+			"10px",
+			"arrow",
+			"0.8rem",
+			"480",
+			"mobile ",
+			"dummyData.betButtonData",
+			"$scope.data.runnerOdds",
+			"modules",
+			"LOG_IN",
+			"header",
+			"LABELS.LOG_IN",
+			"http://media.giphy.com/media/EiwxnURZsqpt6/giphy.gif",
+			"markettype",
+			"FormController",
+			"controller: ",
+			"match_",
+			"WINNER",
+			"marketType",
+			"facetser",
+			"constant('BF",
+			"each",
+			"market type",
+			";\n",
+			"getText",
+			"getText\\",
+			"use userContext mock and check throttles state",
+			"should use userContext mock and check throttles state",
+			".bit",
+			".log",
+			");\n",
+			"denominator",
+			".fractionalDisplayOdds.n",
+			"isFractionalOdds",
+			"$scope.isFractionalOdds",
+			"userContext.throttles",
+			"should use userContext mock and check throttles state",
+			"c.accountSettings",
+			" should click on link and wait for element to ",
+			" should click on link and wait for element to be displayed",
+			"  click on link and wait for element to be displayed",
+			" SMX homepage.should click on link and wait for element to be displayed",
+			"ngAnimate",
+			"ng-animate",
+			"{}",
+			"scope.$subscribe",
+			"rootScope.$subscribe",
+			"rootScope$subscribe",
+			"$subscribe",
+			".$subscribe",
+			"MarketPageService",
+			"subscribe",
+			"refresh.",
+			"refresh",
+			"'refresh'",
+			"'refresh",
+			"veryFastRefresh",
+			"refreshservice",
+			"ero.",
+			"ero",
+			"EroService",
+			"marketInfo.marketUpdate",
+			"betengine.",
+			"REFRESH",
+			"refreshService",
+			"subscribe",
+			"publish",
+			"fobService",
+			"clickF3",
+			"MARKET STATUS Requested :: ",
+			"MARKET STATUS Requested :: 1",
+			"MARKET PRICE Requested :: 3",
+			"MARKET PRICE Requested :: 2",
+			"MARKET PRICE Requested :: 1",
+			"query",
+			"4.5rem",
+			"mystic",
+			"#DADADA",
+			"_",
+			"#3F515F",
+			"container",
+			"max-wid"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"<div class=\"bar-2 hide-mobile\"><div class=\"sample bar-center\">.bar-2</div></div>",
+			"<div class=\"bar-1 hide-mobile\"><div class=\"sample bar-center\">.bar-1</div></div>",
+			"bf-coupon-sub-header",
+			"sample",
+			"%bar",
+			"%",
+			"table",
+			"cenas",
+			"drop",
+			"dummyData.betButtonData.runnerDetails",
+			"$scope.data.runnerDetails.runnerOdds",
+			".bar",
+			"updateService",
+			"$cello",
+			"$mystic",
+			"$cello",
+			"common",
+			"",
+			"'yoyo'",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 98.0
+	},
+	"project": "antoniocapelo.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"main.scss",
+				"client/app/styles/main.scss"
+			],
+			[
+				"grunt",
+				"Gruntfile.js"
+			],
+			[
+				"index",
+				"app/index.html"
+			],
+			[
+				"read",
+				"README.md"
+			],
+			[
+				"mainsc",
+				"app/styles/main.scss"
+			],
+			[
+				"inde",
+				"app/index.html"
+			],
+			[
+				"barss",
+				"dist/css/bars.scss"
+			],
+			[
+				"package",
+				"package.json"
+			],
+			[
+				"conf",
+				"app/conf.js"
+			],
+			[
+				"submo",
+				"app/page-objects/az/az-submodule-po.js"
+			],
+			[
+				"smoke",
+				"app/modules/az/tests-smoke/az-smoke-spec.js"
+			],
+			[
+				"packa",
+				"package.json"
+			],
+			[
+				"subheaderspsc",
+				"app/modules/ui-elements/coupon-subheader/tests/coupon-subheader-spec.js"
+			],
+			[
+				"headerspec",
+				"app/modules/ui-elements/coupon-header/tests/coupon-header-spec.js"
+			],
+			[
+				"subheaderjs",
+				"app/modules/ui-elements/coupon-subheader/source/directives/coupon-subheader-directive.js"
+			],
+			[
+				"ui-elements/coupon-subheader/source/views/coupon-subheader.html",
+				"app/modules/ui-elements/coupon-subheader/source/views/coupon-subheader.html"
+			],
+			[
+				"subheader",
+				"app/modules/ui-elements/coupon-subheader/source/views/coupon-subheader.html"
+			],
+			[
+				"coupon-subheader-directive.html",
+				"coverage/PhantomJS 1.9.7 (Mac OS X)/common/scripts/source/directives/coupon-subheader-directive.js.html"
+			],
+			[
+				"couponheader",
+				"app/modules/ui-elements/coupon-header/source/directives/coupon-header-directive.js"
+			],
+			[
+				"dumyhtml",
+				"app/modules/dummy-module/source/views/dummy-module.html"
+			],
+			[
+				"headerdi",
+				"app/modules/ui-elements/betting-coupon-header/source/directives/betting-coupon-header-directive.js"
+			],
+			[
+				"headerdire",
+				"app/modules/betting-coupon-header/source/directives/betting-coupon-header.js"
+			],
+			[
+				"_colors",
+				"app/common/assets/styles/_colors.scss"
+			],
+			[
+				"dmcontro",
+				"app/modules/dummy-module/source/scripts/controllers/dummy-controller.js"
+			],
+			[
+				"dummyhtml",
+				"app/modules/dummy-module/source/views/dummy-module.html"
+			],
+			[
+				"ngex",
+				"app/vendor/ng-extensions/dist/ng-extensions.js"
+			],
+			[
+				"markett",
+				"app/modules/markets-test/source/scripts/controllers/markets-test-controller.js"
+			],
+			[
+				"marketst",
+				"app/modules/markets-test/source/scripts/controllers/markets-test-controller.js"
+			],
+			[
+				"dummy-module.html",
+				"app/modules/dummy-module/source/views/dummy-module.html"
+			],
+			[
+				"layouts",
+				"app/common/scripts/source/providers/constants/sport-layouts-constants.js"
+			],
+			[
+				"sportslah",
+				"coverage/PhantomJS 1.9.7 (Mac OS X)/common/scripts/source/providers/constants/sport-layouts-constants.js.html"
+			],
+			[
+				"template",
+				"node_modules/grunt-jslint/test/templates.js"
+			],
+			[
+				"rout",
+				"app/common/scripts/source/configurations/route-configuration.js"
+			],
+			[
+				"fobser",
+				"app/common/scripts/source/providers/services/fob-service.js"
+			],
+			[
+				"sportss",
+				"app/common/scripts/source/providers/services/sports-service.js"
+			],
+			[
+				"header.scss",
+				"app/modules/header/source/assets/styles/header.scss"
+			],
+			[
+				"applica",
+				"temp/common/assets/styles/application.scss"
+			],
+			[
+				"devt",
+				"app/devtools/source/views/devtools.html"
+			],
+			[
+				"devtol",
+				"temp/common/assets/styles/devtools.scss"
+			],
+			[
+				"dummym",
+				"app/modules/dummy-module/source/views/dummy-module.html"
+			],
+			[
+				"dumm",
+				"app/page-objects/dummy-module/dummy-module-po.js"
+			],
+			[
+				"subh",
+				"app/common/views/coupon-subheader-directive.html"
+			],
+			[
+				"facetco",
+				"app/http-backend/facet/facet-controller.js"
+			],
+			[
+				"azsub",
+				"app/modules/az/source/views/az-menu-submodule.html"
+			],
+			[
+				"angular",
+				"app/vendor/angular/angular.js"
+			],
+			[
+				"azpo",
+				"app/page-objects/az/az-module-po.js"
+			],
+			[
+				"azsmoek",
+				"app/modules/az/tests-smoke/az-smoke-spec.js"
+			],
+			[
+				"poutils",
+				"app/common/testUtils/pageObjectUtils.js"
+			],
+			[
+				"testutils",
+				"app/common/testUtils/testUtils.js"
+			],
+			[
+				"inswz",
+				"node_modules/grunt-contrib-cssmin/node_modules/maxmin/node_modules/gzip-size/node_modules/browserify-zlib/test/test-zlib-write-after-flush.js"
+			],
+			[
+				"barsscs",
+				"app/styles/bars.scss"
+			],
+			[
+				"main.scs",
+				"app/styles/main.scss"
+			],
+			[
+				"mainscss",
+				"client/app/styles/main.scss"
+			],
+			[
+				"betbutt",
+				"app/modules/ui-elements/bet-button/tests/bet-button-directive-spec.js"
+			],
+			[
+				"betbuton.css",
+				"mobile-web/app/modules/ui-elements/bet-button/source/assets/styles/bet-button.scss"
+			],
+			[
+				"betbiutt",
+				"mobile-web/app/modules/ui-elements/bet-button/source/views/bet-button.html"
+			],
+			[
+				"betbut",
+				"mobile-web/app/modules/ui-elements/bet-button/tests/bet-button-directive-spec.js"
+			],
+			[
+				"dummyco",
+				"mobile-web/app/modules/dummy-module/source/scripts/controllers/dummy-controller.js"
+			],
+			[
+				"betbu",
+				"mobile-web/app/modules/ui-elements/bet-button/source/directives/bet-button.js"
+			],
+			[
+				"ngext",
+				"mobile-web/app/vendor/ng-extensions/dist/ng-extensions.js"
+			],
+			[
+				"header",
+				"mobile-web/app/modules/header/source/views/header.html"
+			],
+			[
+				"translations",
+				"mobile-web/app/common/assets/translations/en.json"
+			],
+			[
+				"gru",
+				"mobile-web/Gruntfile.js"
+			],
+			[
+				"colors.css",
+				"mobile-web/app/common/assets/styles/_colors.scss"
+			],
+			[
+				"dummhtm",
+				"mobile-web/app/modules/dummy-module/source/views/dummy-module.html"
+			],
+			[
+				"dummcontr",
+				"mobile-web/app/modules/dummy-module/source/scripts/controllers/dummy-controller.js"
+			],
+			[
+				"ngexte",
+				"mobile-web/app/vendor/ng-extensions/dist/ng-extensions.js"
+			],
+			[
+				"dummycontr",
+				"mobile-web/app/modules/dummy-module/source/scripts/controllers/dummy-controller.js"
+			],
+			[
+				"ng-xte",
+				"mobile-web/app/vendor/ng-extensions/dist/ng-extensions.js"
+			],
+			[
+				"devtool",
+				"mobile-web/app/devtools/source/scripts/controllers/devtools.js"
+			],
+			[
+				"js",
+				"mobile-web/jslint.json"
+			],
+			[
+				"controller",
+				"mobile-web/app/modules/betslip/source/scripts/controllers/betslip-controller.js"
+			],
+			[
+				"idnex",
+				"mobile-web/app/index.html"
+			],
+			[
+				"runnerdi",
+				"mobile-web/app/common/views/runner-directive-view.html"
+			],
+			[
+				"market",
+				"mobile-web/app/common/scripts/source/directives/market-directive.js"
+			],
+			[
+				"dummy",
+				"mobile-web/app/modules/dummy-module/source/views/dummy-module.html"
+			],
+			[
+				"dummyht",
+				"mobile-web/app/common/layouts/phone/dummy.html"
+			],
+			[
+				"betbutto",
+				"mobile-web/app/modules/bet-button/source/assets/styles/bet-button.scss"
+			],
+			[
+				"betb",
+				"mobile-web/app/modules/bet-button/source/views/bet-button.html"
+			],
+			[
+				"devtoolsser",
+				"mobile-web/app/devtools/tests/test-devtools-service-spec.js"
+			],
+			[
+				"exp",
+				"mobile-web/app/common/scripts/tests/directives/expandable-directive-spec.js"
+			],
+			[
+				"expac",
+				"mobile-web/app/common/scripts/source/directives/expandable-directive.js"
+			],
+			[
+				"dummy-contr",
+				"mobile-web/app/modules/dummy-module/source/scripts/controllers/dummy-controller.js"
+			],
+			[
+				"dummyser/",
+				"mobile-web/app/modules/dummy-module/tests/providers/services/dummy-service-spec.js"
+			],
+			[
+				"expanda",
+				"mobile-web/app/common/scripts/source/directives/expandable-directive.js"
+			],
+			[
+				"expand",
+				"mobile-web/app/common/scripts/tests/directives/expandable-directive-spec.js"
+			],
+			[
+				"expan",
+				"mobile-web/app/common/scripts/tests/directives/expandable-directive-spec.js"
+			],
+			[
+				"dummy.js",
+				"mobile-web/app/modules/dummy-module/source/scripts/controllers/dummy-controller.js"
+			],
+			[
+				"conf.js",
+				"mobile-web/app/conf.js"
+			],
+			[
+				"devtools-service",
+				"mobile-web/app/devtools/source/scripts/providers/services/devtools-service.js"
+			],
+			[
+				"spec",
+				"mobile-web/node_modules/protractor-html-screenshot-reporter/examples/specs/example_spec.js"
+			],
+			[
+				"applicatio",
+				"mobile-web/app/common/scripts/source/application.js"
+			],
+			[
+				"runner-di",
+				"mobile-web/app/common/scripts/source/directives/runner-directive.js"
+			],
+			[
+				"envi",
+				"mobile-web/app/common/scripts/source/environment.js"
+			],
+			[
+				"ng-ex",
+				"bf-ems-static-client/mobile-web/app/vendor/ng-extensions/dist/ng-extensions.js"
+			],
+			[
+				"eroserv",
+				"bf-ems-static-client/mobile-web/app/common/scripts/source/providers/services/ero-service.js"
+			],
+			[
+				"marketpageservice",
+				"bf-ems-static-client/mobile-web/app/common/scripts/source/providers/services/market-page-service.js"
+			],
+			[
+				"marketviwe",
+				"bf-ems-static-client/mobile-web/app/modules/market-view/source/scripts/controllers/market-view-controller.js"
+			],
+			[
+				"envir",
+				"app/common/scripts/source/environment.js"
+			],
+			[
+				"refresh",
+				"app/common/scripts/source/providers/services/refresh-service.js"
+			],
+			[
+				"dummyservice",
+				"app/modules/dummy-module/source/scripts/providers/services/dummy-service.js"
+			],
+			[
+				"dummy-module.js",
+				"app/modules/dummy-module/source/scripts/controllers/dummy-controller.js"
+			],
+			[
+				"devtoos.js",
+				"temp/common/scripts/source/devtools.js"
+			],
+			[
+				"appli",
+				"app/common/scripts/source/application.js"
+			],
+			[
+				"main.css",
+				"app/styles/main.css"
+			],
+			[
+				"main.cs",
+				".tmp/styles/main.css"
+			],
+			[
+				"app.j",
+				"app/scripts/app.js"
+			],
+			[
+				"main.ht",
+				"app/views/main.html"
+			],
+			[
+				"main.js",
+				"app/scripts/controllers/main.js"
+			],
+			[
+				"app.js",
+				"client/app/scripts/app.js"
+			],
+			[
+				"cv.ht",
+				"client/app/views/cv.html"
+			],
+			[
+				"main.htm",
+				"client/app/views/main.html"
+			],
+			[
+				"refres",
+				"app/common/scripts/source/providers/services/refresh-service.js"
+			],
+			[
+				"devto",
+				"app/devtools/source/views/devtools.html"
+			],
+			[
+				"gruntf",
+				"Gruntfile.js"
+			],
+			[
+				"loaderdi",
+				"app/common/scripts/tests/directives/loader-directive-spec.js"
+			],
+			[
+				"loader",
+				"app/common/views/loader-directive.html"
+			],
+			[
+				"too",
+				"app/common/scripts/source/providers/services/toolkit-service.js"
+			],
+			[
+				"url-ser",
+				"app/common/scripts/source/providers/services/url-service.js"
+			],
+			[
+				"proxi",
+				"proxies.json"
+			],
+			[
+				"envior",
+				"app/common/scripts/source/environment.js"
+			],
+			[
+				"configurations",
+				"app/common/scripts/source/configurations/route-configuration.js"
+			],
+			[
+				"devtoo",
+				"app/devtools/source/views/devtools.html"
+			],
+			[
+				"devtools.h",
+				"app/devtools/source/scripts/filters/devtools-throttle-filters.js"
+			],
+			[
+				"devtools",
+				"temp/common/scripts/source/devtools.js"
+			],
+			[
+				"ng-exte",
+				"app/vendor/ng-extensions/dist/ng-extensions.js"
+			],
+			[
+				"bower",
+				"bower.json"
+			],
+			[
+				"header.htm",
+				"app/modules/header/source/views/header.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 240.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

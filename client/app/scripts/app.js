@@ -23,10 +23,10 @@ angular
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
-      .when('/cv', {
-        templateUrl: 'views/cv.html',
-        controller: 'CvCtrl'
-      })
+      // .when('/cv', {
+      //   templateUrl: 'views/cv.html',
+      //   controller: 'CvCtrl'
+      // })
       .otherwise({
         redirectTo: '/'
       });
