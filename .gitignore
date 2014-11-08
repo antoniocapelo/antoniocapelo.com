@@ -1,9 +1,10 @@
 .DS_Store
 .nodemonignore
 .sass-cache/
-.bower-*/
-node_modules/
+client/bower_components
+client/node_modules
+server/node_modules
 public/lib
-test/coverage
+client/test/coverage
 mean.iml
 client/.tmp
