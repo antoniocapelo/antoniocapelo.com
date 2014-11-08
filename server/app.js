@@ -44,6 +44,16 @@ app.use(cookieParser());
 //     });
 // }
 
+// Adding Robots.txt response middleware
+app.use(function (req, res, next) {
+    if ('/robots.txt' == req.url) {
+        res.type('text/plain')
+        res.send("User-agent: *\nDisallow: /");
+    } else {
+        next();
+    }
+});
+
 /**
  * New Development Settings - for AngularJS
  */
