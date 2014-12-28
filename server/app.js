@@ -1,4 +1,6 @@
 var express = require('express');
+var request = require('request');
+var cheerio = require('cheerio');
 var path = require('path');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
@@ -11,7 +13,7 @@ var app = express();
 // app.set('views', path.join(__dirname, 'views'));
 // app.set('view engine', 'jade');
 
-app.use(favicon(path.join(__dirname,'dist','favicon.ico')));
+app.use(favicon(path.join(__dirname, 'dist', 'favicon.ico')));
 
 app.use(logger('dev'));
 app.use(bodyParser.json());
@@ -45,7 +47,7 @@ app.use(cookieParser());
 // }
 
 // Adding Robots.txt response middleware
-app.use(function (req, res, next) {
+app.use(function(req, res, next) {
     if ('/robots.txt' == req.url) {
         res.type('text/plain')
         res.send("User-agent: *\nDisallow: /");
@@ -92,6 +94,38 @@ if (app.get('env') === 'production') {
         });
     });
 }
+
+
+app.get('/api/lastpost', function(req, res) {
+
+    url = 'http://blog.antoniocapelo.com';
+
+    request(url, function(error, response, html) {
+        if (error) {
+            console.log('Error:', error);
+        } else {
+            var $ = cheerio.load(html);
+
+            var json = {
+                title: "",
+                summary: "",
+                image: "",
+                url: ""
+            };
+
+            // We'll use the unique header class as a starting point.
+
+            var post = $('.post')[0];
+            json.title = $(post).find('.post-title a').first().text().trim();
+            json.image = url + $(post).find('.coverpic').first().attr('src');
+            json.url = url + $(post).find('.post-title a').first().attr('href');
+            json.summary = $(post).find('.summary').first().text().trim();
+
+            res.json(json);
+        }
+    })
+
+})
 
 
 module.exports = app;
