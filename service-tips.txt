@@ -1,0 +1,5 @@
+initctl help
+initctl status node-antoniocapelo-site
+initctl reload node-antoniocapelo-site
+initctl start node-antoniocapelo-site # yes, this is the same start
+
