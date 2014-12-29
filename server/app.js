@@ -8,6 +8,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 var app = express();
+var apiModule = require('./api-module');
 
 // view engine setup - erased :)
 // app.set('views', path.join(__dirname, 'views'));
@@ -95,36 +96,9 @@ if (app.get('env') === 'production') {
     });
 }
 
-
-app.get('/api/lastpost', function(req, res) {
-
-    url = 'http://blog.antoniocapelo.com';
-
-    request(url, function(error, response, html) {
-        if (error) {
-            console.log('Error:', error);
-        } else {
-            var $ = cheerio.load(html);
-
-            var json = {
-                title: "",
-                summary: "",
-                image: "",
-                url: ""
-            };
-
-            // We'll use the unique header class as a starting point.
-
-            var post = $('.post')[0];
-            json.title = $(post).find('.post-title a').first().text().trim();
-            json.image = url + $(post).find('.coverpic').first().attr('src');
-            json.url = url + $(post).find('.post-title a').first().attr('href');
-            json.summary = $(post).find('.summary').first().text().trim();
-
-            res.json(json);
-        }
-    })
-
+/* Setting up the api module routing */
+app.get('/api/*', function(req, res) {
+    apiModule.handleApiRequest(req,res);
 })
 
 
