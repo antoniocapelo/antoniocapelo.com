@@ -8,9 +8,11 @@ function handleApiRequest(req, res) {
             fetchLastPost(req, res);
             break;
         case '/api/trout':
+            allowCORS(res);
             res.send('http://cdns2.freepik.com/fotos-gratis/truta-salmonada_2434493.jpg');
             break;
         case '/api/trout/lastpost':
+            allowCORS(res);
             fetchLastPostPinhol(req, res);
             break;
         default:
@@ -18,7 +20,7 @@ function handleApiRequest(req, res) {
     }
 }
 
-function allowCORS (res) {
+function allowCORS(res) {
     res.header("Access-Control-Allow-Origin", "*");
     res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
 }
