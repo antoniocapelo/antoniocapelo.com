@@ -18,6 +18,11 @@ function handleApiRequest(req, res) {
     }
 }
 
+function allowCORS (res) {
+    res.header("Access-Control-Allow-Origin", "*");
+    res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+}
+
 function fetchLastPost(req, res) {
     var url = 'http://blog.antoniocapelo.com';
 
