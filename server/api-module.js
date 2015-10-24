@@ -2,7 +2,9 @@
 var request = require('request');
 var cheerio = require('cheerio');
 
-function handleApiRequest(req, res) {
+var SpotifyWebApi = require('spotify-web-api-node');
+
+function handleApiRequest(req, res, app) {
     switch (req.url) {
         case '/api/lastpost':
             fetchLastPost(req, res);
@@ -19,6 +21,7 @@ function handleApiRequest(req, res) {
             break;
     }
 }
+
 
 function allowCORS(res) {
     res.header("Access-Control-Allow-Origin", "*");
@@ -68,10 +71,10 @@ function fetchLastPostPinhol(req, res) {
                 url: ""
             };
 
-            var post     = $('#index article');
-            json.image   = $('.home .image-wrap img').first().attr('src');
-            json.url     = post.find('a').attr('href');
-            json.title   = post.find('a').text();
+            var post = $('#index article');
+            json.image = $('.home .image-wrap img').first().attr('src');
+            json.url = post.find('a').attr('href');
+            json.title = post.find('a').text();
             json.summary = post.find('p').text();
 
             res.json(json);

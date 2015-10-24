@@ -6,6 +6,8 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var querystring = require('querystring');
+
 
 var app = express();
 var apiModule = require('./api-module');
@@ -16,37 +18,10 @@ var apiModule = require('./api-module');
 
 app.use(favicon(path.join(__dirname, 'dist', 'favicon.ico')));
 
-app.use(logger('dev'));
+app.use(logger('combined'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded());
 app.use(cookieParser());
-// app.use(express.static(path.join(__dirname, 'public')));  - erased :)
-
-//  - erased :)
-// app.use('/', routes);
-// app.use('/users', users);
-
-/// catch 404 and forward to error handler
-// app.use(function(req, res, next) {
-//     var err = new Error('Not Found');
-//     err.status = 404;
-//     next(err);
-// });
-
-/// error handlers
-
-// development error handler  - erased :)
-// will print stacktrace
-// if (app.get('env') === 'development') {
-//     app.use(function(err, req, res, next) {
-//         res.status(err.status || 500);
-//         res.render('error', {
-//             message: err.message,
-//             error: err
-//         });
-//     });
-// }
-
 // Adding Robots.txt response middleware
 app.use(function(req, res, next) {
     if ('/robots.txt' == req.url) {
@@ -98,8 +73,19 @@ if (app.get('env') === 'production') {
 
 /* Setting up the api module routing */
 app.get('/api/*', function(req, res) {
-    apiModule.handleApiRequest(req,res);
+    apiModule.handleApiRequest(req, res, app);
 })
+
+var SpotifyWebApi = require('spotify-web-api-node');
+var spotifyApi = new SpotifyWebApi({
+    clientId: 'd9f3450037fc4dd0aaa928c7860d728f',
+    clientSecret: '246ac78af1d9496091fd971d5778b02a',
+    redirectUri: app.get('env') === 'development' ? 'http://localhost/aux/spotifyCallback' : 'http://www.antoniocapelo.com/aux/spotifyCallback'
+});
+
+
+app.use('/http', express.static(path.join(__dirname, 'extraPages/httpList')));
+
 
 
 module.exports = app;

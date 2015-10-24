@@ -8,3 +8,4 @@ public/lib
 client/test/coverage
 mean.iml
 client/.tmp
+*.swp
