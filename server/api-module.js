@@ -2,8 +2,6 @@
 var request = require('request');
 var cheerio = require('cheerio');
 
-var SpotifyWebApi = require('spotify-web-api-node');
-
 function handleApiRequest(req, res, app) {
     switch (req.url) {
         case '/api/lastpost':
